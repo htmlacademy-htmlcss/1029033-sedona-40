@@ -2,7 +2,7 @@
 
 * Студент: [Антон Трочук](https://up.htmlacademy.ru/htmlcss/40/user/1029033).
 * Наставник: [Николай Колганов](https://htmlacademy.ru/profile/id794007).
-
+* Сайт: [Sedona](https://antontrochuk.github.io/1029033-sedona-40/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
