@@ -9,7 +9,7 @@
     <header class="page-header">
       <img class="logo" src="#" alt="Логотип Sedona">
       <nav class="navigation">
-        <ul class="nav-list">
+        <ul class="nav-list-1">
           <li class="nav-item">
            <a class="nav-link" href="index.html">Главная</a></li>
           <li class="nav-item">
@@ -17,13 +17,32 @@
           <li class="nav-link">
             <a class="nav-link" href="catalog.html">Гостиницы</a></li>
         </ul>
-        <img class="search" src="#" alt="Поиск">
-        <img class="heart" src="#" alt="Избранное">
-        <button class="button" type="button">ХОЧУ СЮДА!</button>  <!--Надо заменить класс-->
+
+        <ul class="nav-list-2">
+          <li class="nav-item-search">
+            <a class="nav-link-search" href="#">
+              <img class="search" src="#" alt="Поиск">
+              <span class="visually-hidden">
+                Поиск
+              </span>
+            </a>
+          </li>
+          <li class="nav-item-heart">
+            <a class="nav-link-heart" href="#">
+              <img class="heart" src="#" alt="Избранное">
+              <span class="visually-hidden">
+                Избранное
+              </span>
+            </a>
+          </li>
+          <li class="nav-item-button">
+            <button class="button" type="button">ХОЧУ СЮДА!</button>  <!--Возможно лучше сделать ссылкой \ Надо заменить класс-->
+          </li>
+        </ul>
       </nav>
     </header>
 
-    <main>
+    <main class="main-index">
       <section class="welcome-to-sedona">
         <h1 class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
         <h3 class="subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h3>
@@ -39,7 +58,7 @@
             <p class="about-sedona-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </li>
           <li class="about-sedona-item-img">
-            <img class="image-about-sedona" src="#" alt="Описание картинки"> <!--Поменять название картинки-->
+            <img class="image-about-sedona" src="#" alt="Описание картинки"> <!--Поменять alt картинки-->
           </li>
         </ul>
 
@@ -97,14 +116,16 @@
       <article class="article">     <!--YНужно поменять название класса-->
         <h3 class="article-subtitle">Заинтересовались?</h3>
         <p class="article-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="article-button" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+
+        <button class="article-button" type="button" >ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>     <!--onclick="document.location='catalog.html'"-->
+
       </article>
 
       <section class="subscribe">
         <h3 class="subscribe-subtitle">Подпишитесь на рассылку</h3>
         <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="get">
-          <input type="text" name="mail">
+          <input type="text" name="mail" placeholder="Ваш e-mail">
           <input type="submit" value="ПОДПИСАТЬСЯ">
         </form>
         <img src="#" alt="Фон">
@@ -115,24 +136,25 @@
     <footer>
       <ul class="footer-list">
         <li class="footer-item">
-          <a href="#">
+          <a href="https://vk.com/htmlacademy">
             <img src="#" alt="Логотип Вконтакте">
           </a>
         </li>
         <li class="footer-item">
-          <a href="#">
+          <a href="https://t.me/htmlacademy ">
             <img src="#" alt="Логотип Телеграм">
           </a>
         </li>
         <li class="footer-item">
-          <a href="#">
+          <a href="https://www.youtube.com/user/htmlacademyru">
             <img src="#" alt="Логотип Ютуб">
           </a>
         </li>
       </ul>
       <a class="footer-phone" href="tel:+74956660266">+7(495) 666-02-66</a>
-
-      <img src="#" alt="Логотип HTML Academy">
+      <a href="https://htmlacademy.ru/">
+       <img src="#" alt="Логотип HTML Academy">
+      </a>
     </footer>
 
   </body>
