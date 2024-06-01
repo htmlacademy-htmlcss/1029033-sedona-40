@@ -5,20 +5,39 @@
     <title>HTML Academy: Седона - Каталог</title>
   </head>
   <body>
-    <header>
+    <header class="page-header">
       <img class="logo" src="#" alt="Логотип Sedona">
       <nav class="navigation">
-        <ul class="nav-list">
+        <ul class="nav-list-1">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Главная</a></li>
+           <a class="nav-link" href="index.html">Главная</a></li>
           <li class="nav-item">
-            <a class="nav-link" href="#">О седоне</a></li>
+           <a class="nav-link" href="#">О седоне</a></li>      <!--Якорь-->
           <li class="nav-link">
             <a class="nav-link" href="catalog.html">Гостиницы</a></li>
         </ul>
-        <img class="search" src="#" alt="Поиск">
-        <img class="heart" src="#" alt="Избранное">
-        <button class="button" type="button">ХОЧУ СЮДА!</button>  <!--Надо заменить класс-->
+
+        <ul class="nav-list-2">
+          <li class="nav-item-search">
+            <a class="nav-link-search" href="#">
+              <img class="search" src="#" alt="Поиск">
+              <span class="visually-hidden">
+                Поиск
+              </span>
+            </a>
+          </li>
+          <li class="nav-item-heart">
+            <a class="nav-link-heart" href="#">
+              <img class="heart" src="#" alt="Избранное">
+              <span class="visually-hidden">
+                Избранное
+              </span>
+            </a>
+          </li>
+          <li class="nav-item-button">
+            <button class="button" type="button">ХОЧУ СЮДА!</button>  <!--Возможно лучше сделать ссылкой \ Надо заменить класс-->
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
@@ -29,8 +48,10 @@
         <img src="#" alt="Иконка домика">
         <img src="#" alt="Иконка стрелки">
 
-        <form action="">
-          <label> Инфраструктура:
+        <form action="https://echo.htmlacademy.ru/" method="post">
+            <label>
+              Инфраструктура:
+            </label>
             <br><input type="checkbox" name="pool" id="check-pool" checked>
             <label for="check-pool">Бассейн</label>
 
@@ -39,9 +60,10 @@
 
             <br><input type="checkbox" name="wifi" id="check-wifi">
             <label for="check-wifi">Wi-Fi</label>
-          </label>
           <br>
-          <label> Тип жилья:
+            <label>
+              Тип жилья:
+            </label>
             <br><input type="radio" name="hotel" id="radio-hotel" value="#" checked>
             <label for="radio-hotel">Гостиница</label>
 
@@ -50,15 +72,17 @@
 
             <br><input type="radio" name="Apartments" id="radio-Apartments" value="#">
             <label for="radio-Apartments">Апартаменты</label>
-          </label>
+
           <br>
-          <label> Стоимость, Р:
+          <label>
+            Стоимость, Р:
+          </label>
             <br>
             <input type="text" name="start" value="0">
             <input type="text" name="end" value="9000">
             <br>
-            <input type="range" class="range" step="any" min="0" max="9000" value="0"/>
-          </label>
+            <input type="range" class="range" step="any" min="0" max="9000" value="0">
+
 
           <button class="apply-button" type="button">Применить</button>
           <button class="reset -button" type="button">Сбросить</button>
@@ -68,7 +92,7 @@
 
       <section class="sorting">               <!--Нужен ли div ?-->
         <div class="sorting-nav">
-          <label for="">НАЙДЕНО ГОСТИНИЦ:
+          <label>НАЙДЕНО ГОСТИНИЦ:
             <output name="result">38</output>
           </label>
           <select name="theme">
@@ -95,7 +119,7 @@
             <p class="catalog-text">От 4000 ₽</p>
             <button class="catalog-button" type="button"></button>
             <button class="catalog-button" type="button"></button>
-            <label for="">РЕЙТИНГ:
+            <label>РЕЙТИНГ:
               <output name="result">8,5</output>
             </label>
             <img src="#" alt="Звездное небо">
@@ -110,7 +134,7 @@
             <p class="catalog-text">От 5000 ₽</p>
             <button class="catalog-button" type="button"></button>
             <button class="catalog-button" type="button"></button>
-            <label for="">РЕЙТИНГ:
+            <label>РЕЙТИНГ:
               <output name="result">9,2</output>
             </label>
             <img src="#" alt="Гора с радугой">
@@ -125,7 +149,7 @@
             <p class="catalog-text">От 2500 ₽</p>
             <button class="catalog-button" type="button"></button>
             <button class="catalog-button" type="button"></button>
-            <label for="">РЕЙТИНГ:
+            <label>РЕЙТИНГ:
               <output name="result">6,9</output>
             </label>
             <img src="#" alt="Гора в ясную погоду">
@@ -139,7 +163,7 @@
             <p class="catalog-text">От 1500 ₽</p>
             <button class="catalog-button" type="button"></button>
             <button class="catalog-button" type="button"></button>
-            <label for="">РЕЙТИНГ:
+            <label>РЕЙТИНГ:
               <output name="result">5,0</output>
             </label>
             <img src="#" alt="Гора на фоне звездного неба">
@@ -169,24 +193,25 @@
     <footer>
       <ul class="footer-list">
         <li class="footer-item">
-          <a href="#">
+          <a href="https://vk.com/htmlacademy">
             <img src="#" alt="Логотип Вконтакте">
           </a>
         </li>
         <li class="footer-item">
-          <a href="#">
+          <a href="https://t.me/htmlacademy ">
             <img src="#" alt="Логотип Телеграм">
           </a>
         </li>
         <li class="footer-item">
-          <a href="#">
+          <a href="https://www.youtube.com/user/htmlacademyru">
             <img src="#" alt="Логотип Ютуб">
           </a>
         </li>
       </ul>
       <a class="footer-phone" href="tel:+74956660266">+7(495) 666-02-66</a>
-
-      <img src="#" alt="Логотип HTML Academy">
+      <a href="https://htmlacademy.ru/">
+       <img src="#" alt="Логотип HTML Academy">
+      </a>
     </footer>
   </body>
 </html>
