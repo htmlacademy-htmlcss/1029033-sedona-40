@@ -4,192 +4,189 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона - Каталог</title>
   </head>
-
-  <header>
-    <img class="logo" src="#" alt="Логотип Sedona">
-    <nav class="navigation">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Главная</a></li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">О седоне</a></li>
-        <li class="nav-link">
-          <a class="nav-link" href="catalog.html">Гостиницы</a></li>
-      </ul>
-      <img class="search" src="#" alt="Поиск">
-      <img class="heart" src="#" alt="Избранное">
-      <button class="button" type="button">ХОЧУ СЮДА!</button>  <!--Надо заменить класс-->
-    </nav>
-  </header>
-
-  <section class="filter">                                <!--НУжно попробовать сделать через ul-->
-
-    <h1 class="filter-title">Гостиницы Седоны</h1>
-    <p class="filter-text">Гостиницы</p>
-    <img src="#" alt="Иконка домика">
-    <img src="#" alt="Иконка стрелки">
-
-    <form action="">
-      <label> Инфраструктура:
-        <br><input type="checkbox" name="pool" id="check-pool" checked>
-        <label for="check-pool">Бассейн</label>
-
-        <br><input type="checkbox" name="parking" id="check-parking" checked>
-        <label for="check-parking">Парковка</label>
-
-        <br><input type="checkbox" name="wifi" id="check-wifi">
-        <label for="check-wifi">Wi-Fi</label>
-      </label>
-      <br>
-      <label> Тип жилья:
-        <br><input type="radio" name="hotel" id="radio-hotel" value="#" checked>
-        <label for="radio-hotel">Гостиница</label>
-
-        <br><input type="radio" name="motel" id="radio-motel" value="#">
-        <label for="radio-motel">Мотель</label>
-
-        <br><input type="radio" name="Apartments" id="radio-Apartments" value="#">
-        <label for="radio-Apartments">Апартаменты</label>
-      </label>
-      <br>
-      <label> Стоимость, Р:
-        <br>
-        <input type="text" name="start" value="0">
-        <input type="text" name="end" value="9000">
-        <br>
-        <input type="range" class="range" step="any" min="0" max="9000" value="0"/>
-      </label>
-
-      <button class="apply-button" type="button">Применить</button>
-      <button class="reset -button" type="button">Сбросить</button>
-
-    </form>
-  </section>
-
-  <section class="sorting">               <!--Нужен ли div ?-->
-    <div class="sorting-nav">
-      <label for="">НАЙДЕНО ГОСТИНИЦ:
-        <output name="result">38</output>
-      </label>
-      <select name="theme">
-        <option value="сheaper">Сначала дешевые</option>
-        <option value="#">#</option>
-      </select>
-      <ul class="sorting-nav-list">
-        <li class="sorting-item">
-          <button class="sorting-button" type="button"></button>
-        </li>
-        <li class="sorting-item">
-         <button class="sorting-button" type="button"></button>
-        </li>
-        <li class="sorting-item">
-          <button class="sorting-button" type="button"></button>
-        </li>
-      </ul>
-    </div>
-
-    <ul class="catalog-list">
-      <li class="catalog-item">
-        <h3 class="catalog-subtitle">Amara Resort & Spa</h3>
-        <p class="catalog-text">Гостиница</p>
-        <p class="catalog-text">От 4000 ₽</p>
-        <button class="catalog-button" type="button"></button>
-        <button class="catalog-button" type="button"></button>
-        <label for="">РЕЙТИНГ:
-          <output name="result">8,5</output>
-        </label>
-        <img src="#" alt="Звездное небо">
-        <img src="#" alt="Звезда рейтинга">    <!--Скорее всего они не нужны (output ?)-->
-        <img src="#" alt="Звезда рейтинга">
-        <img src="#" alt="Звезда рейтинга">
-        <img src="#" alt="Звезда рейтинга">
-      </li>
-      <li class="catalog-item">
-        <h3 class="catalog-subtitle">Villas at Poco Diablo</h3>
-        <p class="catalog-text">Гостиница</p>
-        <p class="catalog-text">От 5000 ₽</p>
-        <button class="catalog-button" type="button"></button>
-        <button class="catalog-button" type="button"></button>
-        <label for="">РЕЙТИНГ:
-          <output name="result">9,2</output>
-        </label>
-        <img src="#" alt="Гора с радугой">
-        <img src="#" alt="Звезда рейтинга">    <!--Скорее всего они не нужны (output ?)-->
-        <img src="#" alt="Звезда рейтинга">
-        <img src="#" alt="Звезда рейтинга">
-        <img src="#" alt="Звезда рейтинга">
-      </li>
-      <li class="catalog-item">
-        <h3 class="catalog-subtitle">Desert Quail Inn</h3>
-        <p class="catalog-text">Гостиница</p>
-        <p class="catalog-text">От 2500 ₽</p>
-        <button class="catalog-button" type="button"></button>
-        <button class="catalog-button" type="button"></button>
-        <label for="">РЕЙТИНГ:
-          <output name="result">6,9</output>
-        </label>
-        <img src="#" alt="Гора в ясную погоду">
-        <img src="#" alt="Звезда рейтинга">    <!--Скорее всего они не нужны (output ?)-->
-        <img src="#" alt="Звезда рейтинга">
-        <img src="#" alt="Звезда рейтинга">
-      </li>
-      <li class="catalog-item">
-        <h3 class="catalog-subtitle">GreenTree Inn</h3>
-        <p class="catalog-text">Гостиница</p>
-        <p class="catalog-text">От 1500 ₽</p>
-        <button class="catalog-button" type="button"></button>
-        <button class="catalog-button" type="button"></button>
-        <label for="">РЕЙТИНГ:
-          <output name="result">5,0</output>
-        </label>
-        <img src="#" alt="Гора на фоне звездного неба">
-        <img src="#" alt="Звезда рейтинга">    <!--Скорее всего они не нужны (output ?)-->
-        <img src="#" alt="Звезда рейтинга">
-      </li>
-    </ul>
-  </section>
-
-  <section class="page-nav">                    <!--Необходимо подумать другой способ разметки этого блока-->
-    <button class="page-nav-button" type="button">1</button>
-    <button class="page-nav-button" type="button">2</button>
-    <button class="page-nav-button" type="button">3</button>
-    <button class="page-nav-button" type="button">4</button>
-    <button class="page-nav-button" type="button">10</button>
-  </section>
-
-  <section class="subscribe">
-    <h3 class="subscribe-subtitle">Подпишитесь на рассылку</h3>
-    <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-    <form action="https://echo.htmlacademy.ru/" method="get">
-      <input type="text" name="mail">
-      <input type="submit" value="ПОДПИСАТЬСЯ">
-    </form>
-  </section>
-
   <body>
+    <header>
+      <img class="logo" src="#" alt="Логотип Sedona">
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Главная</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">О седоне</a></li>
+          <li class="nav-link">
+            <a class="nav-link" href="catalog.html">Гостиницы</a></li>
+        </ul>
+        <img class="search" src="#" alt="Поиск">
+        <img class="heart" src="#" alt="Избранное">
+        <button class="button" type="button">ХОЧУ СЮДА!</button>  <!--Надо заменить класс-->
+      </nav>
+    </header>
+    <main>
+      <section class="filter">                                <!--НУжно попробовать сделать через ul-->
 
+        <h1 class="filter-title">Гостиницы Седоны</h1>
+        <p class="filter-text">Гостиницы</p>
+        <img src="#" alt="Иконка домика">
+        <img src="#" alt="Иконка стрелки">
+
+        <form action="">
+          <label> Инфраструктура:
+            <br><input type="checkbox" name="pool" id="check-pool" checked>
+            <label for="check-pool">Бассейн</label>
+
+            <br><input type="checkbox" name="parking" id="check-parking" checked>
+            <label for="check-parking">Парковка</label>
+
+            <br><input type="checkbox" name="wifi" id="check-wifi">
+            <label for="check-wifi">Wi-Fi</label>
+          </label>
+          <br>
+          <label> Тип жилья:
+            <br><input type="radio" name="hotel" id="radio-hotel" value="#" checked>
+            <label for="radio-hotel">Гостиница</label>
+
+            <br><input type="radio" name="motel" id="radio-motel" value="#">
+            <label for="radio-motel">Мотель</label>
+
+            <br><input type="radio" name="Apartments" id="radio-Apartments" value="#">
+            <label for="radio-Apartments">Апартаменты</label>
+          </label>
+          <br>
+          <label> Стоимость, Р:
+            <br>
+            <input type="text" name="start" value="0">
+            <input type="text" name="end" value="9000">
+            <br>
+            <input type="range" class="range" step="any" min="0" max="9000" value="0"/>
+          </label>
+
+          <button class="apply-button" type="button">Применить</button>
+          <button class="reset -button" type="button">Сбросить</button>
+
+        </form>
+      </section>
+
+      <section class="sorting">               <!--Нужен ли div ?-->
+        <div class="sorting-nav">
+          <label for="">НАЙДЕНО ГОСТИНИЦ:
+            <output name="result">38</output>
+          </label>
+          <select name="theme">
+            <option value="сheaper">Сначала дешевые</option>
+            <option value="#">#</option>
+          </select>
+          <ul class="sorting-nav-list">
+            <li class="sorting-item">
+              <button class="sorting-button" type="button"></button>
+            </li>
+            <li class="sorting-item">
+            <button class="sorting-button" type="button"></button>
+            </li>
+            <li class="sorting-item">
+              <button class="sorting-button" type="button"></button>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <h3 class="catalog-subtitle">Amara Resort & Spa</h3>
+            <p class="catalog-text">Гостиница</p>
+            <p class="catalog-text">От 4000 ₽</p>
+            <button class="catalog-button" type="button"></button>
+            <button class="catalog-button" type="button"></button>
+            <label for="">РЕЙТИНГ:
+              <output name="result">8,5</output>
+            </label>
+            <img src="#" alt="Звездное небо">
+            <img src="#" alt="Звезда рейтинга">    <!--Скорее всего они не нужны (output ?)-->
+            <img src="#" alt="Звезда рейтинга">
+            <img src="#" alt="Звезда рейтинга">
+            <img src="#" alt="Звезда рейтинга">
+          </li>
+          <li class="catalog-item">
+            <h3 class="catalog-subtitle">Villas at Poco Diablo</h3>
+            <p class="catalog-text">Гостиница</p>
+            <p class="catalog-text">От 5000 ₽</p>
+            <button class="catalog-button" type="button"></button>
+            <button class="catalog-button" type="button"></button>
+            <label for="">РЕЙТИНГ:
+              <output name="result">9,2</output>
+            </label>
+            <img src="#" alt="Гора с радугой">
+            <img src="#" alt="Звезда рейтинга">    <!--Скорее всего они не нужны (output ?)-->
+            <img src="#" alt="Звезда рейтинга">
+            <img src="#" alt="Звезда рейтинга">
+            <img src="#" alt="Звезда рейтинга">
+          </li>
+          <li class="catalog-item">
+            <h3 class="catalog-subtitle">Desert Quail Inn</h3>
+            <p class="catalog-text">Гостиница</p>
+            <p class="catalog-text">От 2500 ₽</p>
+            <button class="catalog-button" type="button"></button>
+            <button class="catalog-button" type="button"></button>
+            <label for="">РЕЙТИНГ:
+              <output name="result">6,9</output>
+            </label>
+            <img src="#" alt="Гора в ясную погоду">
+            <img src="#" alt="Звезда рейтинга">    <!--Скорее всего они не нужны (output ?)-->
+            <img src="#" alt="Звезда рейтинга">
+            <img src="#" alt="Звезда рейтинга">
+          </li>
+          <li class="catalog-item">
+            <h3 class="catalog-subtitle">GreenTree Inn</h3>
+            <p class="catalog-text">Гостиница</p>
+            <p class="catalog-text">От 1500 ₽</p>
+            <button class="catalog-button" type="button"></button>
+            <button class="catalog-button" type="button"></button>
+            <label for="">РЕЙТИНГ:
+              <output name="result">5,0</output>
+            </label>
+            <img src="#" alt="Гора на фоне звездного неба">
+            <img src="#" alt="Звезда рейтинга">    <!--Скорее всего они не нужны (output ?)-->
+            <img src="#" alt="Звезда рейтинга">
+          </li>
+        </ul>
+      </section>
+
+      <section class="page-nav">                    <!--Необходимо подумать другой способ разметки этого блока-->
+        <button class="page-nav-button" type="button">1</button>
+        <button class="page-nav-button" type="button">2</button>
+        <button class="page-nav-button" type="button">3</button>
+        <button class="page-nav-button" type="button">4</button>
+        <button class="page-nav-button" type="button">10</button>
+      </section>
+
+      <section class="subscribe">
+        <h3 class="subscribe-subtitle">Подпишитесь на рассылку</h3>
+        <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form action="https://echo.htmlacademy.ru/" method="get">
+          <input type="text" name="mail">
+          <input type="submit" value="ПОДПИСАТЬСЯ">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <ul class="footer-list">
+        <li class="footer-item">
+          <a href="#">
+            <img src="#" alt="Логотип Вконтакте">
+          </a>
+        </li>
+        <li class="footer-item">
+          <a href="#">
+            <img src="#" alt="Логотип Телеграм">
+          </a>
+        </li>
+        <li class="footer-item">
+          <a href="#">
+            <img src="#" alt="Логотип Ютуб">
+          </a>
+        </li>
+      </ul>
+      <a class="footer-phone" href="tel:+74956660266">+7(495) 666-02-66</a>
+
+      <img src="#" alt="Логотип HTML Academy">
+    </footer>
   </body>
-  <footer>
-    <ul class="footer-list">
-      <li class="footer-item">
-        <a href="#">
-          <img src="#" alt="Логотип Вконтакте">
-        </a>
-      </li>
-      <li class="footer-item">
-        <a href="#">
-          <img src="#" alt="Логотип Телеграм">
-        </a>
-      </li>
-      <li class="footer-item">
-        <a href="#">
-          <img src="#" alt="Логотип Ютуб">
-        </a>
-      </li>
-    </ul>
-    <a class="footer-phone" href="tel:+74956660266">+7(495) 666-02-66</a>
-
-    <img src="#" alt="Логотип HTML Academy">
-  </footer>
-
 </html>
