@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  background-color: rgba(242, 242, 242, 1);
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.page-header {
+  display: flex;
+}
+
+.navigation {
+  display: flex;
+
+}
+
+.nav-list-1 {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list-2 {
+  list-style: none;
+  display: flex;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  width: 160px;
+  height: 30px;
+  background-color: rgba(117, 97, 87, 1);
+  color: white;
+  border:none;
+  border-radius: 4px;
+
+}
+
+.welcome-to-sedona {
+  background-image: url('../images/index/welcome_background.jpg');
+  height: 485px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-welcome {
+  margin-top: 51px;
+}
+
+.advantages {
+  width: 1200px;
+  height: 385px;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 385px;
+}
+
+.advantages-item-1 {
+  background-image: url('../images/index/home.svg');
+  background-repeat: no-repeat;
+  background-color: rgba(131, 179, 211, 0.12);
+  background-position: top 81px right 161.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages-item-2 {
+  background-image: url('../images/index/food.svg');
+  background-repeat: no-repeat;
+  background-position: top 81px right 161.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages-item-3 {
+  background-image: url('../images/index/souvenirs.svg');
+  background-repeat: no-repeat;
+  background-color: rgba(131, 179, 211, 0.12);
+  background-position: top 81px right 161.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages-subtitle {
+  margin: 0;
+  padding: 0;
+  width: 230px;
+  height: 28px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.advantages-text {
+  width: 230px;
+  height: 63px;
+  text-align: center;
+}
+
+.advantages-item-3 {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.subscribe {
+  background-color: rgba(131, 179, 211, 1);
+  background-image: url('../images/index/subscribe.jpg');
+  background-size: 1200px auto;
+  padding: 96px 258px 104px 258px;
+  color:#FFFFFF;
+}
+
+.header-filter {
+  background-image: url('../images/catalog/filter-background.jpg');
+  background-repeat: no-repeat;
+}
