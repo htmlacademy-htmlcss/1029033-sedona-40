@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style/style.css">
   </head>
   <body>
+
     <header class="page-header">
       <a href="index.html">
         <img class="logo" src="images/index/logo.svg" width="140" height="70" alt="Логотип Седона">
@@ -16,7 +17,7 @@
            <a class="nav-link" href="index.html">Главная</a></li>
           <li class="nav-item">
            <a class="nav-link" href="#part1">О Седоне</a></li>
-          <li class="nav-link">
+          <li class="nav-item">
             <a class="nav-link" href="catalog.html">Гостиницы</a></li>
         </ul>
 
@@ -36,13 +37,17 @@
                 Избранное
               </span>
             </a>
+            <span class="heart-twelve">
+              12
+            </span>
           </li>
           <li class="nav-item-button">
-            <button class="button" type="button">Хочу сюда!</button>
+            <button class="nav-button button" type="button">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
     </header>
+
     <main>
       <section class="header-filter">
 
@@ -56,54 +61,53 @@
           </li>
           <li class="header-filter-item">
             <span class="header-filter-text">Гостиницы</span>
-
           </li>
         </ul>
 
 
-        <form action="https://echo.htmlacademy.ru/" method="post">
+        <form class="filter" action="https://echo.htmlacademy.ru/" method="post">
 
           <fieldset>
-            <legend>Инфраструктура:</legend>
+            <legend class="filter-legend">Инфраструктура:</legend>
             <ul class="filter-list">
               <li class="filter-item">
                 <input type="checkbox" name="pool" id="check-pool" checked>
-                <label for="check-pool">Бассейн</label>
+                <label class="filter-label" for="check-pool">Бассейн</label>
               </li>
               <li class="filter-item">
                 <input type="checkbox" name="parking" id="check-parking" checked>
-                <label for="check-parking">Парковка</label>
+                <label class="filter-label" for="check-parking">Парковка</label>
               </li>
               <li class="filter-item">
                 <input type="checkbox" name="wifi" id="check-wifi">
-                <label for="check-wifi">Wi-Fi</label>
+                <label class="filter-label" for="check-wifi">Wi-Fi</label>
               </li>
             </ul>
           </fieldset>
           <fieldset>
-            <legend>Тип жилья:</legend>
+            <legend class="filter-legend">Тип жилья:</legend>
             <ul class="filter-list">
               <li class="filter-item">
                 <input type="radio" name="house-type" id="radio-hotel" value="hotel" checked>
-                <label for="radio-hotel">Гостиница</label>
+                <label class="filter-label" for="radio-hotel">Гостиница</label>
               </li>
               <li class="filter-item">
                 <input type="radio" name="house-type" id="radio-motel" value="motel">
-                <label for="radio-motel">Мотель</label>
+                <label class="filter-label" for="radio-motel">Мотель</label>
               </li>
               <li class="filter-item">
                 <input type="radio" name="house-type" id="radio-apartments" value="apartments">
-                <label for="radio-apartments">Апартаменты</label>
+                <label class="filter-label" for="radio-apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
           <fieldset>
-            <legend>Стоимость, ₽:</legend>
+            <legend class="filter-legend">Стоимость, ₽:</legend>
             <input type="text" name="start" value="0">
             <input type="text" name="end" value="9000">
             <input type="range" class="range" step="any" min="0" max="9000" value="0">
-            <button class="apply-button" type="button">Применить</button>
-            <button class="reset-button" type="reset">Сбросить</button>
+            <button class="button apply-button" type="button">Применить</button>
+            <button class="button reset-button" type="reset">Сбросить</button>
           </fieldset>
 
         </form>
@@ -111,7 +115,7 @@
 
       <section class="sorting">
         <div class="sorting-nav">
-          <h2>Найдено гостиниц:
+          <h2 class="heading-heading2-sorting">Найдено гостиниц:
             <output name="result">38</output>
           </h2>
           <select name="theme">
@@ -119,17 +123,17 @@
             <option value="сheaper">Сначала дорогие</option>
           </select>
           <ul class="view-nav-list">
-            <li class="view-item">
+            <li class="view-item item-img-tile">
               <a class="view-button" href="catalog.html?view=tile">
                 <span class="visually-hidden">Тип отображения: плитка</span>
               </a>
             </li>
-            <li class="view-item">
+            <li class="view-item item-img-detail">
               <a class="view-button" href="catalog.html?view=card">
                 <span class="visually-hidden">Тип отображения: подробно</span>
               </a>
             </li>
-            <li class="view-item">
+            <li class="view-item item-img-list">
               <a class="view-button" href="catalog.html?view=list">
                 <span class="visually-hidden">Тип отображения: список</span>
               </a>
@@ -143,11 +147,11 @@
             <h3 class="catalog-subtitle">Amara Resort & Spa</h3>
             <span class="catalog-text">Гостиница</span>
             <span class="catalog-text">От 4000 ₽</span>
-            <a class="catalog-button" href="#">
+            <a class="catalog-a-button" href="#">
               Подробнее
             </a>
             <button class="catalog-button" type="button">В избранное</button>
-            <span class="catalog-text">Рейтинг: 8,5</span>
+            <span class="catalog-text text-background">Рейтинг: 8,5</span>
             <div class="catalog-img">
               <img src="images/catalog/star.svg" alt="4 звезды рейтинга">
               <img src="images/catalog/star.svg" alt="">
@@ -160,11 +164,11 @@
             <h3 class="catalog-subtitle">Villas at Poco Diablo</h3>
             <span class="catalog-text">Гостиница</span>
             <span class="catalog-text">От 5000 ₽</span>
-            <a class="catalog-button" href="#">
+            <a class="catalog-a-button" href="#">
               Подробнее
             </a>
-            <button class="catalog-button" type="button">В избранное</button>
-            <span class="catalog-text">Рейтинг: 9,2</span>
+            <button class="catalog-button-1" type="button">В избранное</button>
+            <span class="catalog-text text-background">Рейтинг: 9,2</span>
             <div class="catalog-img">
               <img src="images/catalog/star.svg" alt="4 звезды рейтинга">
               <img src="images/catalog/star.svg" alt="">
@@ -177,11 +181,11 @@
             <h3 class="catalog-subtitle">Desert Quail Inn</h3>
             <span class="catalog-text">Гостиница</span>
             <span class="catalog-text">От 2500 ₽</span>
-            <a class="catalog-button" href="#">
+            <a class="catalog-a-button" href="#">
               Подробнее
             </a>
             <button class="catalog-button" type="button">В избранное</button>
-            <span class="catalog-text">Рейтинг: 6,9</span>
+            <span class="catalog-text text-background">Рейтинг: 6,9</span>
             <div class="catalog-img">
               <img src="images/catalog/star.svg" alt="3 звезды рейтинга">
               <img src="images/catalog/star.svg" alt="">
@@ -193,11 +197,11 @@
             <h3 class="catalog-subtitle">GreenTree Inn</h3>
             <span class="catalog-text">Гостиница</span>
             <span class="catalog-text">От 1500 ₽</span>
-            <a class="catalog-button" href="#">
+            <a class="catalog-a-button" href="#">
               Подробнее
             </a>
             <button class="catalog-button" type="button">В избранное</button>
-            <span class="catalog-text">Рейтинг: 5,0</span>
+            <span class="catalog-text text-background">Рейтинг: 5,0</span>
             <div class="catalog-img">
               <img src="images/catalog/star.svg" alt="2 звезды рейтинга">
               <img src="images/catalog/star.svg" alt="">
@@ -208,8 +212,8 @@
 
       <section class="pagination-nav">
         <ol class="pagination-list">
-          <li class="pagination-item">
-            <a class="pagination" href="#">1</a>
+          <li class="pagination-item-1">
+            <a class="pagination-1" href="#">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination" href="#">2</a>
@@ -220,8 +224,8 @@
           <li class="pagination-item">
             <a class="pagination" href="#">4</a>
           </li>
-          <li class="pagination__number page">
-            <a class="page__number" href="#">...</a>
+          <li class="pagination-number page">
+            <a class="page-number" href="#">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination" href="#">10</a>
@@ -229,14 +233,13 @@
         </ol>
       </section>
 
-      <section class="subscribe">
-        <h3 class="subscribe-subtitle">Подпишитесь на рассылку</h3>
-        <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <section class="subscribe-catalog">
+        <h3 class="subscribe-subtitle-catalog heading-heading2">Подпишитесь на рассылку</h3>
+        <p class="subscribe-text-catalog text-basic">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="form-subscribe" action="https://echo.htmlacademy.ru/" method="get">
           <input class="input-subscribe" type="email" name="email" placeholder="Ваш e-mail">
-          <button class="subscribe-button" type="button" >Подписаться</button>
+          <button class="button subscribe-button text-button" type="button" >Подписаться</button>
         </form>
-
       </section>
 
     </main>
