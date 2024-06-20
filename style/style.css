@@ -15,61 +15,145 @@
 }
 
 :root {
-  /* ------ Header ------ */
-    --header-button-color: rgba(117, 97, 87, 1);
-    --header-text-button-color: rgba(255, 255, 255, 1);
-    --header-background-color: rgba(255, 255, 255, 1);
-    --header-text-color:rgba(0, 0, 0, 1);
-    --header-font-weight:700;
-    --header-font-size:20px;
-    --header-line-height: 24px;
-    --header-button-font-weight:700;
-    --header-button-font-size:16px;
-    --header-button-line-height: 20px;
-
-  /* ------ Main ------ */
-    --main-heading-heading2-color:rgba(0, 0, 0, 1);
-    --main-heading-heading2-font-weight:700;
-    --main-heading-heading2-font-size:30px;
-    --main-heading-heading2-line-height:36px;
-    --main-text-basic-color:rgba(51, 51, 51, 1);
-    --main-text-basic-font-weight:400;
-    --main-text-basic-font-size:22px;
-    --main-text-basic-line-height:26px;
-    --main-heading3-color:rgba(0, 0, 0, 1);
-    --main-heading3-font-weight:700;
-    --main-heading3-font-size:24px;
-    --main-heading3-line-height:28px;
-    --main-text-blocks-color:rgba(51, 51, 51, 1);
-    --main-text-blocks-font-weight:400;
-    --main-text-blocks-font-size:18px;
-    --main-text-blocks-line-height:21px;
-    --main-color-1-background-color:rgba(130, 179, 211, 1);
-    --main-color-2-background-color:rgba(131, 179, 211, 0.12);
-    --main-color-3-background-color:rgba(131, 179, 211, 0.2);
-    --main-button-color: rgba(117, 97, 87, 1);
-    --main-subscribe-button-color: rgba(130, 179, 211, 1);
-    --main-text-button-color: rgba(255, 255, 255, 1);
-    --main-button-font-weight:700;
-    --main-button-font-size:20px;
-    --main-button-line-height: 36px;
-
-  /* ------ Footer ------ */
-    --footer-text-color:rgba(0, 0, 0, 1);
-    --footer-font-weight:400;
-    --footer-font-size:40px;
-    --footer-line-height: 40px;
+  /* --------------- Palette --------------- */
+    /* Palette text */
+    --text-basic-color: rgba(0, 0, 0, 1);
+    --text-second-color: rgba(51, 51, 51, 1);
+    --text-deafault-color: rgba(255, 255, 255, 1);
+    --text-background-small:rgba(255, 255, 255, 0.3);
+    --text-error-color:rgba(255, 87, 87, 1);
+    /* Palette buttons */
+    --buttons-basic-color:rgba(117, 97, 87, 1);
+    --buttons-second-color:rgba(130, 179, 211, 1);
+    --buttons-select-color:rgba(125, 181, 79, 1);
+    /* Palette background */
+    --basic-background-color: rgba(255, 255, 255, 1);
+    --second-background-color: rgba(242, 242, 242, 1);
+    --basic2-background-color: rgba(130, 179, 211, 1);
+    --second2-background-color: rgba(131, 179, 211, 0.12);
+    --second3-background-color: rgba(131, 179, 211, 0.2);
+    /* Palette icon */
+    --icon-basic-color:rgba(0, 0, 0, 1);
+    --icon-second-color:rgba(131, 179, 211, 1);
+    --icon-text-color:rgba(125, 181, 79, 1);
+    /* Palette form */
+    --form-inputs-color:rgba(63, 94, 114, 1);
+    --form-elements-color:rgba(229, 229, 229, 1);
+    --form-elements2-color:rgba(242, 242, 242, 1);
 }
+/* --------------- Typography --------------- */
+  /* Headings */
+  .heading-heading1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+  }
+
+  .heading-heading2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+
+  .heading-heading3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+
+  .headings-heading3-nonecase {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .heading-heading4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /* Buttons */
+  .button-big {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    border: none
+  }
+
+  .button-small {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    border: none
+  }
+
+  .button-regular {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    border: none
+  }
+
+  .button-titlecase {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    border: none
+  }
+
+  /* Text */
+  .text-phone{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+
+  .text-blocks{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .text-small{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .text-basic{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .text-input{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .text-checkbox{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+  }
 
 html {
-  background-color: rgba(242, 242, 242, 1);
+  background-color: var(--second-background-color);
 }
 
 body {
   font-family: "PT Sans", sans-serif;
   width: 1200px;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 1);
+  background-color:var(--basic-background-color);
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -83,200 +167,214 @@ body {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-
-.button {
-  text-transform: uppercase;
-  border: none;
-}
-
 /* ------ Header ------ */
 
 .nav-link {
   text-decoration: none;
-  color: var(--header-text-color);
-  font-weight: var(--header-font-weight);
-  font-size: var(--header-font-size);
-  line-height: var(--header-line-height);
+  color: var(--text-basic-color);
 }
 
 .heart-twelve {
-  background-color: rgba(125, 181, 79, 1);
+  background-color: var(--icon-text-color);
+  color:var(--text-deafault-color);
 }
 
 .nav-button {
-  background-color: var(--header-button-color);
-  color: var(--header-text-button-color);
-  font-weight: var(--header-button-font-weight);
-  font-size: var(--header-button-font-size);
-  line-height: var(--header-button-line-height);
+  background-color: var(--buttons-basic-color);
+  color: var(--text-deafault-color);
 }
+
 
 /* ------ Main ------ */
 
 .welcome-to-sedona {
   background-image: url('../images/index/welcome_background.jpg');
+  background-color: chartreuse; /* Заменить */
+  background-size: cover;
 }
 
 .about-sedona-hr {
   width: 60px;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid var(--text-background-small);
   margin-bottom: 30px;
 }
 
-.heading-heading2 {
-  color: var(--main-heading-heading2-color);
-  font-weight: var(--main-heading-heading2-font-weight);
-  font-size: var(--main-heading-heading2-font-size);
-  line-height: var(--main-heading-heading2-line-height);
-  text-transform: uppercase;
+.about-sedona-title {
+  color: var(--text-basic-color);
   text-align: center;
 }
 
-.text-basic {
-  color: var(--main-text-basic-color);
-  font-weight: var(--main-text-basic-font-weight);
-  font-size: var(--main-text-basic-font-size);
-  line-height: var(--main-text-basic-line-height);
+.about-sedona-text {
+  color: var(--text-second-color);
   text-align: center;
 }
 
-.heading3 {
-  color: var(--main-heading3-color);
-  font-weight: var(--main-heading3-font-weight);
-  font-size: var(--main-heading3-font-size);
-  line-height: var(--main-heading3-line-height);
-  text-transform: uppercase;
+.about-sedona-subtitle {
+  color: var(--text-basic-color);
   text-align: center;
 }
 
-.text-blocks {
-  color: var(--main-text-blocks-color);
-  font-weight: var(--main-text-blocks-font-weight);
-  font-size: var(--main-text-blocks-font-size);
-  line-height: var(--main-text-blocks-line-height);
+.sedona-block-1 .about-sedona-subtitle {
+  color: var(--text-deafault-color);
   text-align: center;
 }
 
-.color-1 {
-  background-color: var(--main-color-1-background-color);
+.sedona-block-1 .about-sedona-text {
+  color: var(--text-deafault-color);
+  text-align: center;
 }
 
-.color-2 {
-  background-color: var(--main-color-2-background-color);
+.sedona-block-7 .about-sedona-subtitle {
+  color: var(--text-deafault-color);
+  text-align: center;
 }
 
-.color-2 {
-  background-color: var(--main-color-3-background-color);
+.sedona-block-7 .about-sedona-text {
+  color: var(--text-deafault-color);
+  text-align: center;
 }
 
-.advantages-item-1 {
+.about-sedona-text {
+  color: var(--text-second-color);
+  text-align: center;
+}
+
+.about-sedona-item:nth-child(1),
+.about-sedona-item:nth-child(7){
+  background-color: var(--basic2-background-color);
+}
+
+.about-sedona-item:nth-child(3),
+.about-sedona-item:nth-child(5){
+  background-color: var(--second2-background-color);
+}
+
+.about-sedona-item:nth-child(4){
+  background-color: var(--second3-background-color);
+}
+
+.article-subtitle {
+  color: var(--text-basic-color);
+  text-align: center;
+}
+
+.article-text {
+  color: var(--text-second-color);
+  text-align: center;
+}
+
+.advantages-subtitle {
+  color: var(--text-basic-color);
+  text-align: center;
+}
+
+.advantages-text {
+  color: var(--text-second-color);
+  text-align: center;
+}
+
+.advantages-item:nth-child(1),
+.advantages-item:nth-child(3){
+  background-color: var(--second2-background-color);
+}
+
+.advantages-block-1 {
   background-image: url('../images/index/home.svg');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.advantages-item-2 {
+.advantages-block-2 {
   background-image: url('../images/index/food.svg');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.advantages-item-3 {
+.advantages-block-3 {
   background-image: url('../images/index/souvenirs.svg');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.text-button{
-  color: var(--header-text-button-color);
-  font-weight: var(--main-button-font-weight);
-  font-size: var(--main-button-font-size);
-  line-height: var(--main-button-line-height);
+.article-interested-subtitle {
+  color: var(--text-basic-color);
+  text-align: center;
+}
+
+.article-interested-text {
+  color: var(--text-second-color);
   text-align: center;
 }
 
 .article-button {
-  background-color: var(--main-button-color);
+  background-color: var(--buttons-basic-color);
+  color: var(--text-deafault-color);
 }
 
 .subscribe-button {
-  background-color: var(--main-subscribe-button-color);
+  background-color: var(--buttons-second-color);
 }
 
 .subscribe {
   background-image: url('../images/index/subscribe.jpg');
+  background-size: cover;
 }
 
 .subscribe-subtitle {
-  color: rgba(255, 255, 255, 1);
+  color: var(--text-deafault-color);
+  text-align: center;
 }
 
 .subscribe-text {
-  color: rgba(255, 255, 255, 1);
+  color: var(--text-deafault-color);
+  text-align: center;
+}
+
+.subscribe-button {
+  color: var(--text-deafault-color);
 }
 
 /* ------ Footer ------ */
 
 .footer-phone {
   text-decoration: none;
-  color: var(--footer-text-color);
-  font-weight: var(--footer-font-weight);
-  font-size: var(--footer-font-size);
-  line-height: var(--footer-line-height);
+  color: var(--text-basic-color);
 }
 
 /* ------ Catalog ------ */
 
 .header-filter {
   background-image: url('../images/catalog/filter-background.jpg');
+  background-size: cover;
 }
 
 .header-filter-title {
-  color: rgba(255, 255, 255, 1);
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 78px;
+  color: var(--text-deafault-color);
 }
 
 .header-filter-text {
-  color: rgba(255, 255, 255, 1);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
+  color: var(--text-deafault-color);
 }
 
 .filter-legend {
-  color: rgba(255, 255, 255, 1);
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
+  color: var(--text-deafault-color);
 }
 
 .filter-label {
-  color: rgba(255, 255, 255, 1);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
+  color: var(--text-deafault-color);
 }
 
 .apply-button {
-  background-color: rgba(130, 179, 211, 1);
-  color: rgba(255, 255, 255, 1);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
+  background-color: var(--basic2-background-color);
+  color: var(--text-deafault-color);
 }
 
 .reset-button {
   background-color: transparent;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
 }
 
-.heading-heading2-sorting {
-  color: var(--main-heading-heading2-color);
-  font-weight: var(--main-heading-heading2-font-weight);
-  font-size: var(--main-heading-heading2-font-size);
-  line-height: var(--main-heading-heading2-line-height);
-  text-transform: uppercase;
+.sorting-subtitle {
+  color: var(--text-basic-color);
 }
 
 .item-img-tile {
@@ -294,88 +392,62 @@ body {
   background-repeat: no-repeat;
 }
 
+.sorting-select {
+  font-family: 'PT Sans';
+}
+
 .catalog-subtitle {
-  color: rgba(0, 0, 0, 1);
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
+  color: var(--text-basic-color);
 }
 
 .catalog-text {
-  color: rgba(51, 51, 51, 1);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
+  color: var(--text-second-color);
+}
+
+.catalog-text-rating {
+  color: var(--text-second-color);
+  background-color: var(--second-background-color);
 }
 
 .catalog-a-button {
-  background-color: rgba(117, 97, 87, 1);
-  color:rgba(255, 255, 255, 1);
   text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
+  background-color:var(--buttons-basic-color);
+  color:var(--text-deafault-color);
 }
 
 .catalog-button {
-  background-color: rgba(130, 179, 211, 1);
-  color:rgba(255, 255, 255, 1);
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  border: none;
+  background-color: var(--buttons-second-color);
+  color:var(--text-deafault-color);
 }
 
-.catalog-button-1 {
-  background-color: rgba(125, 181, 79, 1);
-  color:rgba(255, 255, 255, 1);
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  border: none;
+.catalog-button-select {
+  background-color: var(--buttons-select-color);
+  color:var(--text-deafault-color);
 }
 
-.text-background {
-  background-color: rgba(242, 242, 242, 1);
-}
-
-.pagination-item-1 {
-  background-color: rgba(242, 242, 242, 1);
+.pagination-item-active {
+  background-color: var(--second-background-color);
   list-style: none;
 }
 
 .pagination-item {
-  background-color: rgba(130, 179, 211, 1);
+  background-color: var(--buttons-second-color);
   list-style: none;
 }
 
-.pagination-number {
+.pagination-page-number {
   list-style: none;
-}
-
-.pagination-1 {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 1);
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-}
-
-.pagination {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 1);
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
 }
 
 .page-number {
   text-decoration: none;
-  color: rgba(0, 0, 0, 1);
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
+}
+
+.pagination {
+  text-decoration: none;
+  color: var(--text-basic-color);
+}
+
+.pagination-active {
+  background-color: var(--form-elements2-color);
 }
