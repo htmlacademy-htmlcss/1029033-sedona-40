@@ -8,47 +8,50 @@
   <body>
 
     <header class="page-header">
-      <a href="index.html">
-        <img class="logo" src="images/index/logo.svg" width="140" height="70" alt="Логотип Седона">
-      </a>
       <nav class="navigation">
-        <ul class="nav-list-1">
-          <li class="nav-item">
-           <a class="nav-link heading-heading4" href="index.html">Главная</a></li>
-          <li class="nav-item">
-           <a class="nav-link heading-heading4" href="#part1">О Седоне</a></li>
-          <li class="nav-item">
-            <a class="nav-link heading-heading4" href="catalog.html">Гостиницы</a></li>
-        </ul>
-
-        <ul class="nav-list-2">
-          <li class="nav-item-search">
-            <a class="nav-link nav-link-search" href="#">
-              <img class="search" src="images/index/search.svg" width="18" height="18" alt="Поиск">
-              <span class="visually-hidden">
-                Поиск
+        <div class="navigation-frame-menu">
+          <a href="index.html">
+            <img class="logo" src="images/index/logo.svg" width="140" height="70" alt="Логотип Седона">
+          </a>
+          <ul class="nav-list-1">
+            <li class="nav-item">
+            <a class="nav-link heading-heading4" href="index.html">Главная</a></li>
+            <li class="nav-item">
+            <a class="nav-link heading-heading4" href="#part1">О Седоне</a></li>
+            <li class="nav-item">
+              <a class="nav-link heading-heading4" href="catalog.html">Гостиницы</a></li>
+          </ul>
+        </div>
+        <div class="navigation-custom-menu">
+          <ul class="nav-list-2">
+            <li class="nav-item-search">
+              <a class="nav-link nav-link-search" href="#">
+                <img class="search" src="images/index/search.svg" width="18" height="18" alt="Поиск">
+                <span class="visually-hidden">
+                  Поиск
+                </span>
+              </a>
+            </li>
+            <li class="nav-item-heart">
+              <a class="nav-link nav-link-heart" href="#">
+                <img class="heart" src="images/index/heart.svg" width="18" height="17" alt="Избранное">
+                <span class="visually-hidden">
+                  Избранное
+                </span>
+              </a>
+              <span class="heart-twelve">
+                12
               </span>
-            </a>
-          </li>
-          <li class="nav-item-heart">
-            <a class="nav-link nav-link-heart" href="#">
-              <img class="heart" src="images/index/heart.svg" width="18" height="17" alt="Избранное">
-              <span class="visually-hidden">
-                Избранное
-              </span>
-            </a>
-            <span class="heart-twelve">
-              12
-            </span>
-          </li>
-          <li class="nav-item-button">
-            <button class="nav-button button-small" type="button">Хочу сюда!</button>
-          </li>
-        </ul>
+            </li>
+            <li class="nav-item-button">
+              <button class="nav-button button-small" type="button">Хочу сюда!</button>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
-    <main>
+    <main class="main-index">
       <section class="header-filter">
 
         <h1 class="header-filter-title heading-heading1">Гостиницы Седоны</h1>
@@ -67,7 +70,7 @@
 
         <form class="filter" action="https://echo.htmlacademy.ru/" method="post">
 
-          <fieldset>
+          <fieldset class="filter-fieldset">
             <legend class="filter-legend heading-heading4">Инфраструктура:</legend>
             <ul class="filter-list">
               <li class="filter-item">
@@ -84,7 +87,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-fieldset">
             <legend class="filter-legend heading-heading4">Тип жилья:</legend>
             <ul class="filter-list">
               <li class="filter-item">
@@ -101,13 +104,17 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend class="filter-legend heading-heading4">Стоимость, ₽:</legend>
-            <input type="text" name="start" value="0">
-            <input type="text" name="end" value="9000">
-            <input type="range" class="range" step="any" min="0" max="9000" value="0">
-            <button class="apply-button button-small" type="button">Применить</button>
-            <button class="reset-button button-small" type="reset">Сбросить</button>
+          <fieldset class="filter-fieldset">
+            <div class="filter-fieldset-price">
+              <legend class="filter-legend heading-heading4">Стоимость, ₽:</legend>
+              <input type="text" name="start" value="0">
+              <input type="text" name="end" value="9000">
+              <input type="range" class="range" step="any" min="0" max="9000" value="0">
+            </div>
+            <div class="filter-fieldset-button">
+              <button class="apply-button button-small" type="button">Применить</button>
+              <button class="reset-button button-small" type="reset">Сбросить</button>
+            </div>
           </fieldset>
 
         </form>
@@ -212,7 +219,7 @@
 
       <section class="pagination-nav">
         <ol class="pagination-list">
-          <li class="pagination-item-active">
+          <li class="pagination-item pagination-item-active">
             <a class="pagination button-big" href="#">1</a>
           </li>
           <li class="pagination-item">
@@ -224,7 +231,7 @@
           <li class="pagination-item">
             <a class="pagination button-big" href="#">4</a>
           </li>
-          <li class="pagination-page-number">
+          <li class="pagination-item pagination-page-number">
             <a class="page-number text-basic" href="#">...</a>
           </li>
           <li class="pagination-item">

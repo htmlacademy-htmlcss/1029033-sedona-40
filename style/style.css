@@ -147,6 +147,7 @@
 
 html {
   background-color: var(--second-background-color);
+  height: 100%;
 }
 
 body {
@@ -155,6 +156,13 @@ body {
   margin: 0 auto;
   background-color:var(--basic-background-color);
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main-index {
+  flex-grow: 1;
 }
 
 .visually-hidden {
@@ -184,6 +192,21 @@ body {
   color: var(--text-deafault-color);
 }
 
+.navigation {
+  display: flex;
+}
+
+.navigation-frame-menu {
+  width: 507px;
+  display: flex;
+  margin-left: 70px;
+  margin-right: 285px;
+}
+
+.navigation-custom-menu {
+  width: 268px;
+  display: flex;
+}
 
 /* ------ Main ------ */
 
@@ -239,18 +262,37 @@ body {
   text-align: center;
 }
 
+.about-sedona-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .about-sedona-item:nth-child(1),
 .about-sedona-item:nth-child(7){
   background-color: var(--basic2-background-color);
+  width: 400px;
+  height: 385px;
 }
 
 .about-sedona-item:nth-child(3),
 .about-sedona-item:nth-child(5){
   background-color: var(--second2-background-color);
+  width: 400px;
+  height: 385px;
 }
 
 .about-sedona-item:nth-child(4){
   background-color: var(--second3-background-color);
+  width: 400px;
+  height: 385px;
+}
+
+.about-sedona-item:nth-child(2),
+.about-sedona-item:nth-child(6){
+  height: 385px;
 }
 
 .article-subtitle {
@@ -278,22 +320,26 @@ body {
   background-color: var(--second2-background-color);
 }
 
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
 .advantages-block-1 {
   background-image: url('../images/index/home.svg');
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .advantages-block-2 {
   background-image: url('../images/index/food.svg');
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .advantages-block-3 {
   background-image: url('../images/index/souvenirs.svg');
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .article-interested-subtitle {
@@ -336,6 +382,18 @@ body {
 
 /* ------ Footer ------ */
 
+.index-footer {
+  display: flex;
+  min-height: 100%;
+}
+
+.footer-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
 .footer-phone {
   text-decoration: none;
   color: var(--text-basic-color);
@@ -356,6 +414,31 @@ body {
   color: var(--text-deafault-color);
 }
 
+.header-filter-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.filter {
+  display: flex;
+}
+
+.filter-fieldset {
+  border:0 none;
+}
+
+.filter-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-fieldset:nth-child(3) {
+  display: flex;
+}
+
 .filter-legend {
   color: var(--text-deafault-color);
 }
@@ -373,27 +456,56 @@ body {
   background-color: transparent;
 }
 
+.sorting-nav {
+  display: flex;
+}
+
+.view-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
 .sorting-subtitle {
   color: var(--text-basic-color);
 }
 
+.view-item {
+  width: 48px;
+  height: 48px;
+  border: 2px solid var(--icon-basic-color);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .item-img-tile {
   background-image: url('../images/catalog/tile.svg');
-  background-repeat: no-repeat;
 }
 
 .item-img-detail {
   background-image: url('../images/catalog/detail.svg');
-  background-repeat: no-repeat;
 }
 
 .item-img-list {
   background-image: url('../images/catalog/list.svg');
-  background-repeat: no-repeat;
 }
 
 .sorting-select {
   font-family: 'PT Sans';
+}
+
+.catalog-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-item {
+  width: 340px;
+  height: 438px;
 }
 
 .catalog-subtitle {
@@ -425,18 +537,25 @@ body {
   color:var(--text-deafault-color);
 }
 
-.pagination-item-active {
-  background-color: var(--second-background-color);
+.pagination-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
   list-style: none;
 }
 
 .pagination-item {
+  width: 60px;
+  height: 60px;
   background-color: var(--buttons-second-color);
-  list-style: none;
+}
+
+.pagination-item-active {
+  background-color: var(--form-elements2-color);
 }
 
 .pagination-page-number {
-  list-style: none;
+  background-color:var(--basic-background-color);
 }
 
 .page-number {
