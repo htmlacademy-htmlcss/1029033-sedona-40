@@ -70,7 +70,7 @@
 
         <form class="filter" action="https://echo.htmlacademy.ru/" method="post">
 
-          <fieldset class="filter-fieldset">
+          <fieldset class="filter-fieldset filter-fieldset-infrastructure">
             <legend class="filter-legend heading-heading4">Инфраструктура:</legend>
             <ul class="filter-list">
               <li class="filter-item">
@@ -87,7 +87,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter-fieldset">
+          <fieldset class="filter-fieldset filter-fieldset-housing">
             <legend class="filter-legend heading-heading4">Тип жилья:</legend>
             <ul class="filter-list">
               <li class="filter-item">
@@ -104,30 +104,31 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter-fieldset">
-            <div class="filter-fieldset-price">
+          <fieldset class="filter-fieldset filter-fieldset-price">
               <legend class="filter-legend heading-heading4">Стоимость, ₽:</legend>
-              <input type="text" name="start" value="0">
-              <input type="text" name="end" value="9000">
+            <div class="filter-price">
+              <input type="text" class="range-text" name="start" value="0">
+              <input type="text" class="range-text" name="end" value="9000">
               <input type="range" class="range" step="any" min="0" max="9000" value="0">
             </div>
-            <div class="filter-fieldset-button">
-              <button class="apply-button button-small" type="button">Применить</button>
-              <button class="reset-button button-small" type="reset">Сбросить</button>
-            </div>
           </fieldset>
+          <div class="filter-fieldset-button">
+            <button class="apply-button button-small" type="button">Применить</button>
+            <button class="reset-button button-small" type="reset">Сбросить</button>
+          </div>
 
         </form>
       </section>
 
       <section class="sorting">
+
         <div class="sorting-nav">
           <h2 class="sorting-subtitle heading-heading2">Найдено гостиниц:
             <output name="result">38</output>
           </h2>
           <select class="sorting-select text-blocks" name="theme">
             <option class="sorting-select text-blocks" value="сheaper">Сначала дешевые</option>
-            <option class="sorting-select text-blocks" value="сheaper">Сначала дорогие</option>
+            <option class="sorting-select text-blocks" value="expensive">Сначала дорогие</option>
           </select>
           <ul class="view-nav-list">
             <li class="view-item item-img-tile">
@@ -148,79 +149,126 @@
           </ul>
         </div>
 
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <img src="images/catalog/amara_resort.jpg" alt="Звездное небо в Amara Resort & Spa">
-            <h3 class="catalog-subtitle headings-heading3-nonecase">Amara Resort & Spa</h3>
-            <span class="catalog-text text-blocks">Гостиница</span>
-            <span class="catalog-text text-blocks">От 4000 ₽</span>
-            <a class="catalog-a-button button-small" href="#">
-              Подробнее
-            </a>
-            <button class="catalog-button button-small" type="button">В избранное</button>
-            <span class="catalog-text-rating button-regular">Рейтинг: 8,5</span>
-            <div class="catalog-img">
-              <img src="images/catalog/star.svg" alt="4 звезды рейтинга">
-              <img src="images/catalog/star.svg" alt="">
-              <img src="images/catalog/star.svg" alt="">
-              <img src="images/catalog/star.svg" alt="">
-            </div>
-          </li>
-          <li class="catalog-item">
-            <img src="images/catalog/villas_poco.jpg" alt="Гора с радугой в Villas at Poco Diablo">
-            <h3 class="catalog-subtitle headings-heading3-nonecase">Villas at Poco Diablo</h3>
-            <span class="catalog-text text-blocks">Гостиница</span>
-            <span class="catalog-text text-blocks">От 5000 ₽</span>
-            <a class="catalog-a-button button-small" href="#">
-              Подробнее
-            </a>
-            <button class="catalog-button-select button-small" type="button">В избранное</button>
-            <span class="catalog-text-rating button-regular">Рейтинг: 9,2</span>
-            <div class="catalog-img">
-              <img src="images/catalog/star.svg" alt="4 звезды рейтинга">
-              <img src="images/catalog/star.svg" alt="">
-              <img src="images/catalog/star.svg" alt="">
-              <img src="images/catalog/star.svg" alt="">
-            </div>
-          </li>
-          <li class="catalog-item">
-            <img src="images/catalog/desert_quail.jpg" alt="Гора в ясную погоду в Desert Quail Inn">
-            <h3 class="catalog-subtitle headings-heading3-nonecase">Desert Quail Inn</h3>
-            <span class="catalog-text text-blocks">Гостиница</span>
-            <span class="catalog-text text-blocks">От 2500 ₽</span>
-            <a class="catalog-a-button button-small" href="#">
-              Подробнее
-            </a>
-            <button class="catalog-button button-small" type="button">В избранное</button>
-            <span class="catalog-text-rating button-regular">Рейтинг: 6,9</span>
-            <div class="catalog-img">
-              <img src="images/catalog/star.svg" alt="3 звезды рейтинга">
-              <img src="images/catalog/star.svg" alt="">
-              <img src="images/catalog/star.svg" alt="">
-            </div>
-          </li>
-          <li class="catalog-item">
-            <img src="images/catalog/green_tree.jpg" alt="Гора на фоне звездного неба в GreenTree Inn">
-            <h3 class="catalog-subtitle headings-heading3-nonecase">GreenTree Inn</h3>
-            <span class="catalog-text text-blocks">Гостиница</span>
-            <span class="catalog-text text-blocks">От 1500 ₽</span>
-            <a class="catalog-a-button button-small" href="#">
-              Подробнее
-            </a>
-            <button class="catalog-button button-small" type="button">В избранное</button>
-            <span class="catalog-text-rating button-regular">Рейтинг: 5,0</span>
-            <div class="catalog-img">
-              <img src="images/catalog/star.svg" alt="2 звезды рейтинга">
-              <img src="images/catalog/star.svg" alt="">
-            </div>
-          </li>
-        </ul>
+
+        <div class="catalog">
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <div class="catalog-item-card">
+                <img src="images/catalog/amara_resort.jpg" class="catalog-item-img" width="300" height="212" alt="Звездное небо в Amara Resort & Spa">
+                <h3 class="catalog-subtitle headings-heading3-nonecase">Amara Resort & Spa</h3>
+                <div class="catalog-card-section card-size">
+                  <span class="catalog-text text-blocks">Гостиница </span>
+                  <span class="catalog-text text-blocks text-align-end">От 4000 ₽ </span>
+                  <a class="catalog-a-button  button-small" href="#">
+                    Подробнее
+                  </a>
+                  <button class="catalog-button button-small" type="button">В избранное</button>
+                  <ul class="catalog-rating-list">
+                    <li class="catalog-rating-item">
+                      <img src="images/catalog/star.svg" width="18" height="17" alt="4 звезды рейтинга">
+                    </li>
+                    <li class="catalog-rating-item">
+                      <img src="images/catalog/star.svg" width="18" height="17" alt="">
+                    </li>
+                    <li class="catalog-rating-item">
+                      <img src="images/catalog/star.svg" width="18" height="17" alt="">
+                    </li>
+                    <li class="catalog-rating-item">
+                      <img src="images/catalog/star.svg" width="18" height="17" alt="">
+                    </li>
+                  </ul>
+                  <span class="catalog-text-rating button-regular">Рейтинг: 8,5</span>
+                </div>
+              </div>
+            </li>
+            <li class="catalog-item">
+              <div class="catalog-item-card">
+                <img src="images/catalog/villas_poco.jpg" class="catalog-item-img" width="300" height="212" alt="Гора с радугой в Villas at Poco Diablo">
+                <h3 class="catalog-subtitle headings-heading3-nonecase">Villas at Poco Diablo</h3>
+                <div class="catalog-card-section card-size">
+                  <span class="catalog-text text-blocks">Гостиница</span>
+                  <span class="catalog-text text-blocks text-align-end">От 5000 ₽</span>
+                  <a class="catalog-a-button button-small" href="#">
+                    Подробнее
+                  </a>
+                  <button class="catalog-button-select button-small" type="button">В избранное</button>
+                  <ul class="catalog-rating-list">
+                    <li class="catalog-rating-item">
+                      <img src="images/catalog/star.svg" width="18" height="17" alt="4 звезды рейтинга">
+                    </li>
+                    <li class="catalog-rating-item">
+                      <img src="images/catalog/star.svg" width="18" height="17" alt="">
+                    </li>
+                    <li class="catalog-rating-item">
+                      <img src="images/catalog/star.svg" width="18" height="17" alt="">
+                    </li>
+                    <li class="catalog-rating-item">
+                      <img src="images/catalog/star.svg" width="18" height="17" alt="">
+                    </li>
+                  </ul>
+                  <span class="catalog-text-rating button-regular">Рейтинг: 9,2</span>
+                </div>
+              </div>
+            </li>
+            <li class="catalog-item">
+              <div class="catalog-item-card">
+                <img src="images/catalog/desert_quail.jpg" class="catalog-item-img" width="300" height="212" alt="Гора в ясную погоду в Desert Quail Inn">
+                <h3 class="catalog-subtitle headings-heading3-nonecase">Desert Quail Inn</h3>
+                <div class="catalog-card-section card-size">
+                  <span class="catalog-text text-blocks">Гостиница</span>
+                  <span class="catalog-text text-blocks text-align-end">От 2500 ₽</span>
+                  <a class="catalog-a-button button-small" href="#">
+                    Подробнее
+                  </a>
+                  <button class="catalog-button button-small" type="button">В избранное</button>
+                  <ul class="catalog-rating-list">
+                    <li class="catalog-rating-item">
+                      <img src="images/catalog/star.svg" width="18" height="17" alt="3 звезды рейтинга">
+                    </li>
+                    <li class="catalog-rating-item">
+                      <img src="images/catalog/star.svg" width="18" height="17" alt="">
+                    </li>
+                    <li class="catalog-rating-item">
+                      <img src="images/catalog/star.svg" width="18" height="17" alt="">
+                    </li>
+                  </ul>
+                  <span class="catalog-text-rating button-regular">Рейтинг: 6,9</span>
+                </div>
+              </div>
+            </li>
+            <li class="catalog-item">
+              <div class="catalog-item-card">
+                <img src="images/catalog/green_tree.jpg" class="catalog-item-img" width="300" height="212" alt="Гора на фоне звездного неба в GreenTree Inn">
+                <h3 class="catalog-subtitle headings-heading3-nonecase">GreenTree Inn</h3>
+                <div class="catalog-card-section card-size">
+                  <span class="catalog-text text-blocks">Гостиница</span>
+                  <span class="catalog-text text-blocks text-align-end">От 1500 ₽</span>
+                  <a class="catalog-a-button button-small" href="#">
+                    Подробнее
+                  </a>
+                  <button class="catalog-button button-small" type="button">В избранное</button>
+                  <ul class="catalog-rating-list">
+                    <li class="catalog-rating-item">
+                      <img src="images/catalog/star.svg" width="18" height="17" alt="2 звезды рейтинга">
+                    </li>
+                    <li class="catalog-rating-item">
+                      <img src="images/catalog/star.svg" width="18" height="17" alt="">
+                    </li>
+                  </ul>
+                  <span class="catalog-text-rating button-regular">Рейтинг: 5,0</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
+
+      <hr class="catalog-hr">
       <section class="pagination-nav">
         <ol class="pagination-list">
           <li class="pagination-item pagination-item-active">
-            <a class="pagination button-big" href="#">1</a>
+            <a class="pagination pagination-active button-big" href="#">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination button-big" href="#">2</a>
@@ -241,12 +289,14 @@
       </section>
 
       <section class="subscribe-catalog">
-        <h3 class="subscribe-subtitle-catalog heading-heading2">Подпишитесь на рассылку</h3>
-        <p class="subscribe-text-catalog text-basic">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="form-subscribe" action="https://echo.htmlacademy.ru/" method="get">
-          <input class="input-subscribe" type="email" name="email" placeholder="Ваш e-mail">
-          <button class="subscribe-button button-big" type="button" >Подписаться</button>
-        </form>
+
+          <h3 class="subscribe-subtitle-catalog heading-heading2">Подпишитесь на рассылку</h3>
+          <p class="subscribe-text-catalog text-basic">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="form-subscribe" action="https://echo.htmlacademy.ru/" method="get">
+            <input class="input-subscribe input-subscribe-catalog" type="email" name="email" placeholder="Ваш e-mail">
+            <button class="subscribe-button button-big" type="button" >Подписаться</button>
+          </form>
+
       </section>
 
     </main>
