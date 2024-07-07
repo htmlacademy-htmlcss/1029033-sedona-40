@@ -112,9 +112,30 @@
           <fieldset class="filter-fieldset filter-fieldset-price">
               <legend class="filter-legend heading-heading4">Стоимость, ₽:</legend>
             <div class="filter-price">
-              <input type="text" class="range-text" name="start" value="0">
-              <input type="text" class="range-text" name="end" value="9000">
-              <input type="range" class="range" step="any" min="0" max="9000" value="0">
+
+              <span class="range-text-min">От</span>
+              <input type="text" class="range-text range-start text-input" name="start" value="0">
+
+              <span class="range-text-max">До</span>
+              <input type="text" class="range-text range-end text-input" name="end" value="9000">
+
+
+              <div class="range">
+                <div class="range-scale" >
+                  <div class="range-bar" style="left: 0; width: 226px">
+                    <button type="button" class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену</span>
+                    </button>
+                    <button type="button" class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену</span>
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+
+
+
             </div>
           </fieldset>
           <div class="filter-fieldset-button">
@@ -275,20 +296,20 @@
           <li class="pagination-item pagination-item-active">
             <a class="pagination pagination-active button-big" href="#">1</a>
           </li>
-          <li class="pagination-item">
-            <a class="pagination button-big" href="#">2</a>
+          <li class="pagination-item item-peace">
+            <a class="pagination pagination-peace button-big" href="#">2</a>
           </li>
-          <li class="pagination-item">
-            <a class="pagination button-big" href="#">3</a>
+          <li class="pagination-item item-peace">
+            <a class="pagination pagination-peace button-big" href="#">3</a>
           </li>
-          <li class="pagination-item">
-            <a class="pagination button-big" href="#">4</a>
+          <li class="pagination-item item-peace">
+            <a class="pagination pagination-peace button-big" href="#">4</a>
           </li>
           <li class="pagination-item pagination-page-number">
             <a class="page-number text-basic" href="#">...</a>
           </li>
-          <li class="pagination-item">
-            <a class="pagination button-big" href="#">10</a>
+          <li class="pagination-item item-peace">
+            <a class="pagination pagination-peace button-big" href="#">10</a>
           </li>
         </ol>
       </section>
