@@ -150,7 +150,9 @@
       <article class="article-interested">
         <h2 class="article-interested-subtitle heading-heading2 removing-overflow">Заинтересовались?</h2>
         <p class="article-interested-text text-basic removing-overflow">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="article-button button-big" type="button" >Поиск гостиницы в Седоне</button>
+        <label class="article-button-label" for="modal-container">
+          <button class="article-button button-big" type="button" >Поиск гостиницы в Седоне</button>
+        </label>
       </article>
 
       <section class="subscribe">
@@ -202,9 +204,8 @@
 
 
     <!--модальное окно-->
-    <input class="article-interested-button-radio" type="radio" name="nav-button" id="modal-container">
-    <input class="nav-button-radio " type="radio" name="nav-button" id="modal-container">
-    <div class="modal-container">
+    <input class="article-interested-button-radio" type="checkbox" name="nav-button" id="modal-container">
+    <div class="modal-container modal-container-close">
       <div class="modal-window">
         <h3 class="modal-window-subtitle heading-heading2 removing-overflow">Поиск гостиницы в Седоне</h3>
         <input class="modal-window-close" type="radio" name="nav-button">

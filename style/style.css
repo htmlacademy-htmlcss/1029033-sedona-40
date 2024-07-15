@@ -81,7 +81,8 @@
     font-size: 20px;
     line-height: 36px;
     text-transform: uppercase;
-    border: none
+    border: none;
+    font-family: "PT Sans"
   }
 
   .button-small {
@@ -89,7 +90,8 @@
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
-    border: none
+    border: none;
+    font-family: "PT Sans";
   }
 
   .button-regular {
@@ -97,14 +99,14 @@
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
-    border: none
+    border: none;
   }
 
   .button-titlecase {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    border: none
+    border: none;
   }
 
   /* Text */
@@ -295,7 +297,7 @@ body {
 }
 
 .nav-button:hover,
-.nav-button:focus {
+.nav-button:focus-visible {
   background-color: rgba(97, 80, 72, 1);
 }
 
@@ -507,6 +509,10 @@ body {
   width: 597px;
 }
 
+.article-button-label {
+  align-self: center;
+}
+
 .article-button {
   background-color: var(--buttons-basic-color);
   color: var(--text-default-color);
@@ -517,10 +523,11 @@ body {
   align-self: center;
   margin-bottom: 20px;
   cursor: pointer;
+  margin: 0;
 }
 
 .article-button:hover,
-.article-button:focus {
+.article-button:focus-visible {
   background-color: rgba(97, 80, 72, 1);
 }
 
@@ -543,10 +550,11 @@ body {
   height: 52px;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
+  padding:8px 50px 8px 50px;
 }
 
 .subscribe-button:hover,
-.subscribe-button:focus {
+.subscribe-button:focus-visible {
   background-color: rgba(104, 162, 202, 1);
 }
 
@@ -623,7 +631,7 @@ body {
 }
 
 .footer-link:hover .link-icon,
-.footer-link:focus .link-icon {
+.footer-link:focus-visible .link-icon {
   fill: rgba(104, 162, 202, 1);
 }
 
@@ -638,7 +646,7 @@ body {
 }
 
 .footer-phone:hover,
-.footer-phone:focus {
+.footer-phone:focus-visible {
   color: rgba(117, 97, 87, 1);
 }
 
@@ -647,7 +655,7 @@ body {
 }
 
 .footer-logo-link:hover .footer-logo,
-.footer-logo-link:focus .footer-logo {
+.footer-logo-link:focus-visible .footer-logo {
   fill: rgba(117, 97, 87, 1);
 }
 
@@ -781,7 +789,7 @@ body {
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
 }
 
-.range-toggle:focus {
+.range-toggle:focus-visible {
   outline: 3px solid rgba(131, 179, 211, 1);
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
@@ -830,6 +838,18 @@ body {
   padding-left: 36px;
 }
 
+.filter-label:hover {
+  opacity: 0.6;
+}
+
+.filter-checkbox:focus-visible +  .control-checkbox{
+  border: 3px solid rgba(131, 179, 211, 1);
+}
+
+.filter-label:active {
+  opacity: 0.3;
+}
+
 .control-checkbox {
   position: absolute;
   top: 2px;
@@ -839,6 +859,10 @@ body {
   border: none;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 4px;
+}
+
+.filter-radio:focus-visible +  .control-radio{
+  border: 3px solid rgba(131, 179, 211, 1);
 }
 
 .control-checkbox-jackdaw {
@@ -896,7 +920,7 @@ body {
 }
 
 .apply-button:hover,
-.apply-button:focus {
+.apply-button:focus-visible {
   background-color: rgba(104, 162, 202, 1);
 }
 
@@ -908,7 +932,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.reset-button:focus {
+.reset-button:focus-visible {
   border: 3px solid rgba(131, 179, 211, 1);
   border-radius: 4px;
 }
@@ -952,6 +976,15 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 4px;
+}
+
+.view-item:hover,
+.view-item:active{
+  border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.view-item:focus-visible {
+  border: 2px solid rgba(104, 162, 202, 1);
 }
 
 .form-elements-color {
@@ -1063,7 +1096,7 @@ body {
 }
 
 .catalog-a-button:hover,
-.catalog-a-button:focus {
+.catalog-a-button:focus-visible {
   background-color: rgba(97, 80, 72, 1);
 }
 
@@ -1072,7 +1105,7 @@ body {
 }
 
 .catalog-button:hover,
-.catalog-button:focus {
+.catalog-button:focus-visible {
   background-color: rgba(104, 162, 202, 1);
 }
 
@@ -1096,7 +1129,7 @@ body {
 }
 
 .catalog-button-select:hover,
-.catalog-button-select:focus {
+.catalog-button-select:focus-visible {
   background-color: rgba(108, 158, 66, 1);
 }
 
@@ -1133,7 +1166,7 @@ body {
 }
 
 .item-peace:hover,
-.item-peace:focus {
+.item-peace:focus-visible {
   background-color: rgba(104, 162, 202, 1);
 }
 
@@ -1188,16 +1221,6 @@ body {
 
 /*Модальное окно*/
 
-.nav-button-radio {
-  position: absolute;
-  width: 160px;
-  height: 36px;
-  top: 15px;
-  left: 965px;
-  opacity: 0;
-  cursor: pointer;
-}
-
 .modal-window-close {
   position: absolute;
   width: 160px;
@@ -1219,16 +1242,7 @@ body {
 
 .article-interested-button-radio {
   position: absolute;
-  width: 375px;
-  height: 52px;
-  top: 2852px;
-  left: 405px;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.nav-button-radio:checked + .modal-container {
-  display: block;
+  opacity: 1;
 }
 
 .article-interested-button-radio:checked ~ .modal-container {
