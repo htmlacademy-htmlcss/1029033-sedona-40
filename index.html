@@ -9,7 +9,7 @@
 
   <body>
 
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <div class="navigation-frame-menu">
           <a class="logo" href="index.html">
@@ -67,13 +67,13 @@
       </nav>
     </header>
 
-    <main class="main-index">
+    <main class="main-index" data-test="main">
       <section class="welcome-to-sedona">
         <img class="image-welcome" src="images/index/welcome.svg" width="458" height="352" alt="Приветсвенная надпись Седона">
         <img src="images/index/welcome_divider.svg" width="1200" height="57" alt="Маска фона">
       </section>
 
-      <section class="about-sedona">
+      <section class="about-sedona" data-test="advantages">
         <div class="about-sedona-div">
           <h1 class="about-sedona-title heading-heading2 removing-overflow">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
           <p class="about-sedona-text-basic text-basic removing-overflow">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -128,7 +128,7 @@
         <p class="article-text text-basic removing-overflow">Опытный персонал и качественное обслуживание!</p>
       </article>
 
-      <section class="advantages">
+      <section class="advantages" data-test="service">
         <ul class="advantages-list">
           <li class="advantages-item background-second-1 advantages-block-home">
             <h3 class="advantages-subtitle heading-heading3 removing-overflow">Жильё</h3>
@@ -146,13 +146,13 @@
         </ul>
       </section>
 
-      <article class="article-interested">
+      <article class="article-interested" data-test="search">
         <h2 class="article-interested-subtitle heading-heading2 removing-overflow">Заинтересовались?</h2>
         <p class="article-interested-text text-basic removing-overflow">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <label class="article-button button-big" for="modal-container" >Поиск гостиницы в Седоне</label>
       </article>
 
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h3 class="subscribe-subtitle heading-heading2 removing-overflow">Подпишитесь на рассылку</h3>
         <p class="subscribe-text text-basic removing-overflow">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="form-subscribe" action="https://echo.htmlacademy.ru/" method="get">
@@ -165,7 +165,7 @@
 
     </main>
 
-    <footer class="index-footer">
+    <footer class="index-footer" data-test="footer">
       <div class="footer-block">
         <ul class="footer-list">
           <li class="footer-item">
@@ -202,7 +202,7 @@
 
     <!--модальное окно-->
     <input class="article-interested-button-radio" type="checkbox" name="nav-button" id="modal-container">
-    <div class="modal-container">
+    <div class="modal-container" data-test="modal">
       <div class="modal-window">
         <h3 class="modal-window-subtitle heading-heading2 removing-overflow">Поиск гостиницы в Седоне</h3>
         <label class="modal-window-button modal-window-close" for="modal-container">
