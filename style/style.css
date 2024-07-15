@@ -516,14 +516,13 @@ body {
 .article-button {
   background-color: var(--buttons-basic-color);
   color: var(--text-default-color);
-  width: 376px;
-  height: 52px;
+  padding: 8px 50px 8px 50px;
   border-radius: 4px;
-  padding: 0;
+
   align-self: center;
-  margin-bottom: 20px;
-  cursor: pointer;
   margin: 0;
+  cursor: pointer;
+  text-align: center;
 }
 
 .article-button:hover,
@@ -678,6 +677,27 @@ body {
 
 .header-filter-text {
   color: var(--text-default-color);
+  cursor: pointer;
+}
+
+.header-filter-item:focus-visible .header-filter-text {
+  color: rgba(255, 255, 255, 1);
+}
+
+.header-filter-home:hover {
+  opacity: 0.6;
+}
+
+.header-filter-home:active {
+  opacity: 0.3;
+}
+
+.header-filter-text:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.header-filter-text:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .header-filter-list {
@@ -809,12 +829,28 @@ body {
 .range-start {
   border: none;
   border-radius: 4px 0 0 4px;
+  cursor: pointer;
+  outline: 0;
+  outline-offset: 0;
 }
 
 .range-end {
   border: none;
   border-radius: 0 4px 4px 0;
   margin-left: 2px;
+  cursor: pointer;
+  outline: 0;
+  outline-offset: 0;
+}
+
+.range-start:hover,
+.range-end:hover {
+  background-color: rgba(230, 230, 230, 1);
+}
+
+.range-start:focus-visible,
+.range-end:focus-visible {
+  border: 3px solid rgba(131, 179, 211, 1);
 }
 
 .filter-fieldset-button {
@@ -917,6 +953,8 @@ body {
   height: 36px;
   padding: 0;
   cursor: pointer;
+  outline: 0;
+  outline-offset: 0;
 }
 
 .apply-button:hover,
@@ -967,6 +1005,22 @@ body {
   margin: 0 70px 0 auto;
   border: 2px solid rgba(229, 229, 229, 1);
   border-radius: 4px;
+  padding-left: 20px;
+  appearance: none;
+  background: url('../images/catalog/arrow-select.svg');
+  background-repeat: no-repeat;
+  background-position: top 21px right 20px;
+  outline: 0;
+}
+
+.sorting-select:hover,
+.sorting-select:focus-visible {
+  border: 2px solid rgba(104, 162, 202, 1);
+}
+
+.sorting-select:active {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  opacity: 0.3;
 }
 
 .view-item {
@@ -1180,6 +1234,7 @@ body {
 
 .page-number {
   text-decoration: none;
+  color: rgba(0, 0, 0, 1);
 }
 
 .pagination {
@@ -1221,17 +1276,6 @@ body {
 
 /*Модальное окно*/
 
-.modal-window-close {
-  position: absolute;
-  width: 160px;
-  height: 36px;
-  top: 70px;
-  left: 555px;
-  z-index: 1;
-  opacity: 0;
-  cursor: pointer;
-}
-
 .modal-container {
   position: fixed;
   width: 1200px;
@@ -1242,7 +1286,7 @@ body {
 
 .article-interested-button-radio {
   position: absolute;
-  opacity: 1;
+  opacity: 0;
 }
 
 .article-interested-button-radio:checked ~ .modal-container {
@@ -1276,6 +1320,19 @@ body {
   position: absolute;
   top: 64px;
   right: 52px;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.modal-window-button:hover {
+  background: rgba(230, 230, 230, 1);
+}
+
+.modal-window-button:focus-visible {
+  border: 3px solid rgba(131, 179, 211, 1);
+}
+
+.modal-window-button:active .modal-window-button-close {
+  opacity: 0.3;
 }
 
 .modal-window-button-close {
@@ -1295,7 +1352,7 @@ body {
   display: grid;
   grid-template-columns: 137px 440px;
   grid-template-rows: 48px 4px 21px;
-
+  position: relative;
 }
 
 .arrival-date-label {
@@ -1317,6 +1374,27 @@ body {
   font-size: 18px;
   color: #000000;
   font-family: "PT Sans";
+  cursor: pointer;
+  outline: 0;
+  outline-offset: 0;
+}
+
+.arrival-date-input:hover,
+.date-of-departure-input:hover {
+  background-color: rgba(230, 230, 230, 1);
+}
+
+.arrival-date-input:focus-visible,
+.date-of-departure-input:focus-visible {
+  background-color: rgba(230, 230, 230, 1);
+  border: 3px solid rgba(131, 179, 211, 1);
+}
+
+.arrival-date-input-img {
+  position: absolute;
+  top: 16px;
+  right: 22px;
+  bottom: 17px;
 }
 
 .arrival-date-text-eror {
@@ -1326,10 +1404,22 @@ body {
   color: var(--text-error-color);
 }
 
+.arrival-date-text-eror::after {
+  content: 'Мы не можем отправить вас в прошлое.';
+}
+
 .departure-date-elements {
   display: grid;
   grid-template-columns: 137px 440px;
   grid-template-rows: 48px 4px 21px;
+  position: relative;
+}
+
+.date-of-departure-input-img {
+  position: absolute;
+  top: 16px;
+  right: 22px;
+  bottom: 17px;
 }
 
 .date-of-departure-label {
@@ -1351,6 +1441,9 @@ body {
   font-size: 18px;
   color: #000000;
   font-family: "PT Sans";
+  outline: 0;
+  outline-offset: 0;
+  cursor: pointer;
 }
 
 .date-of-departure-text {
@@ -1400,6 +1493,8 @@ body {
   top: 14px;
   padding: 0;
   cursor: pointer;
+  outline: 0;
+  outline-offset: 0;
 }
 
 .button-minus:hover .button-plus-minus-img {
@@ -1410,6 +1505,14 @@ body {
 .button-plus:hover .button-plus-minus-img {
   fill: rgba(0, 0, 0, 1);
   fill-opacity: 1;
+}
+
+.button-minus:active .button-plus-minus-img {
+  fill: rgba(0, 0, 0, 0.2);
+}
+
+.button-plus:active .button-plus-minus-img {
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 .button-plus-minus-img {
@@ -1428,6 +1531,14 @@ body {
   top: 14px;
   padding: 0;
   cursor: pointer;
+  outline: 0;
+  outline-offset: 0;
+}
+
+.button-minus:focus-visible,
+.button-plus:focus-visible {
+  border: 3px solid rgba(130, 179, 211, 1);
+  border-radius: 4px;
 }
 
 .children-label {
@@ -1471,6 +1582,15 @@ body {
   cursor: pointer;
 }
 
+.adults-children-button:hover,
+.adults-children-button:focus-visible {
+  background: #68A2CA;
+}
+
+.adults-children-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .pop-up-window {
   position: absolute;
   top:35px;
@@ -1499,6 +1619,7 @@ body {
   color: #FFFFFF;
   font-weight: 400;
   font-size: 16px;
+  line-height: 20px;
   padding: 15px 18px 18px 22px;
 }
 
