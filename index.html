@@ -149,7 +149,7 @@
       <article class="article-interested" data-test="search">
         <h2 class="article-interested-subtitle heading-heading2 removing-overflow">Заинтересовались?</h2>
         <p class="article-interested-text text-basic removing-overflow">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <label class="article-button button-big" for="modal-container" >Поиск гостиницы в Седоне</label>
+        <label tabindex="0" class="article-button button-big" for="modal-container" >Поиск гостиницы в Седоне</label>
       </article>
 
       <section class="subscribe" data-test="subscribe">
@@ -201,11 +201,11 @@
 
 
     <!--модальное окно-->
-    <input class="article-interested-button-radio" type="checkbox" name="nav-button" id="modal-container">
+    <input class="article-interested-button-radio visually-hidden" type="checkbox" name="nav-button" id="modal-container">
     <div class="modal-container" data-test="modal">
       <div class="modal-window">
         <h3 class="modal-window-subtitle heading-heading2 removing-overflow">Поиск гостиницы в Седоне</h3>
-        <label class="modal-window-button modal-window-close" for="modal-container">
+        <label class="modal-window-button modal-window-close" for="modal-container" tabindex="0">
           <span class="visually-hidden">Закрыть</span>
           <svg class="modal-window-button-close" width="15" height="15" viewBox="0 0 15 15" fill="#000000" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z"/>
@@ -258,13 +258,13 @@
 
               <label class="adults-label heading-heading4" for="adults-check">Взрослые:</label>
               <div class="adults">
-                <button class="button-minus" type="button">
+                <button class="button-minus" type="button" onclick="handleChangeCount('adults-check', 'minus')">
                   <svg class="button-plus-minus-img" width="14" height="2" viewBox="0 0 14 2" fill="#756157" fill-opacity="0.3" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0L0 2L14 2V0L0 0Z"/>
                   </svg>
                 </button>
-                <input class="adults-children-input" type="text" name="adults" id="adults-check" value="2">
-                <button class="button-plus" type="button">
+                <input class="adults-children-input" type="number" name="adults" id="adults-check" value="2">
+                <button class="button-plus" type="button" onclick="handleChangeCount('adults-check', 'plus')">
                   <svg class="button-plus-minus-img" width="14" height="14" viewBox="0 0 14 14" fill="#756157" fill-opacity="0.3" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
                     </svg>
@@ -281,13 +281,13 @@
                 </div>
               </button>
               <div class="children">
-                <button class="button-minus" type="button">
+                <button class="button-minus" type="button" onclick="handleChangeCount('children-check', 'minus')">
                   <svg class="button-plus-minus-img" width="14" height="2" viewBox="0 0 14 2" fill="#756157" fill-opacity="0.3" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0L0 2L14 2V0L0 0Z"/>
                   </svg>
                 </button>
-                <input class="adults-children-input" type="text" name="children" id="children-check" value="2">
-                <button class="button-plus" type="button">
+                <input class="adults-children-input" type="number" name="children" id="children-check" value="2">
+                <button class="button-plus" type="button" onclick="handleChangeCount('children-check', 'plus')">
                   <svg class="button-plus-minus-img" width="14" height="14" viewBox="0 0 14 14" fill="#756157" fill-opacity="0.3" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
                     </svg>
@@ -299,6 +299,14 @@
         </form>
       </div>
     </div>
-
   </body>
+  <script>
+    const handleChangeCount = (inputId, action) => {
+      const input = document.getElementById(inputId);
+      const min = Number(input.min);
+      const diff = action === 'minus' ? -1 : 1;
+      const newValue = Number(input.value) + diff;
+      input.value = newValue < min ? min : newValue;
+    }
+  </script>
 </html>

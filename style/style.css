@@ -154,7 +154,6 @@
 
 html {
   height: 100%;
-  overflow-x: hidden;
 }
 
 body {
@@ -308,7 +307,7 @@ body {
 
 .welcome-to-sedona {
   background-image: url('../images/index/welcome_background.jpg');
-  background-color: chartreuse; /* Заменить */
+  background-color: rgb(69, 227, 255);
   background-size: cover;
   height: 485px;
   display: flex;
@@ -1284,13 +1283,12 @@ body {
   display: none;
 }
 
-.article-interested-button-radio {
-  position: absolute;
-  opacity: 0;
-}
-
 .article-interested-button-radio:checked ~ .modal-container {
   display: block;
+}
+
+.article-interested-button-radio {
+  top: 2500px;
 }
 
 .modal-window {
@@ -1634,4 +1632,10 @@ body {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-bottom: 10px solid #333333;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
