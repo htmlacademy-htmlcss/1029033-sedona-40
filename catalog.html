@@ -8,26 +8,36 @@
   </head>
   <body>
 
-    <header class="page-header">
+
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <div class="navigation-frame-menu">
-          <a href="index.html">
-            <img class="logo" src="images/index/logo.svg" width="140" height="70" alt="Логотип Седона">
+          <a class="logo" href="index.html">
+            <img src="images/index/logo.svg" width="140" height="70" alt="Логотип Седона">
           </a>
           <ul class="nav-list-1">
             <li class="nav-item">
-            <a class="nav-link heading-heading4" href="index.html">Главная</a></li>
+              <a class="nav-link nav-link-menu  heading-heading4" href="index.html">
+                Главная
+              </a>
+            </li>
             <li class="nav-item">
-            <a class="nav-link heading-heading4" href="#part1">О Седоне</a></li>
+              <a class="nav-link nav-link-menu heading-heading4" href="#part1">
+                О Седоне
+              </a>
+            </li>
             <li class="nav-item">
-              <a class="nav-link heading-heading4 nav-link-active" >Гостиницы</a></li>
+              <a class="nav-link nav-link-menu nav-link-active heading-heading4" href="catalog.html">
+                Гостиницы
+              </a>
+            </li>
           </ul>
         </div>
         <div class="navigation-custom-menu">
           <ul class="nav-list-2">
             <li class="nav-item-search">
               <a class="nav-link nav-link-search" href="#">
-                <img class="search" src="images/index/search.svg" width="18" height="18" alt="Поиск">
+                <img class="search" src="images/index/search.svg" width="20" height="20" alt="Поиск">
                 <span class="visually-hidden">
                   Поиск
                 </span>
@@ -35,17 +45,17 @@
             </li>
             <li class="nav-item-heart">
               <a class="nav-link nav-link-heart" href="#">
-                <img class="heart" src="images/index/heart.svg" width="18" height="17" alt="Избранное">
+                <img class="heart" src="images/index/heart.svg" width="20" height="20" alt="Избранное">
                 <span class="visually-hidden">
                   Избранное
                 </span>
+                <span class="heart-twelve">
+                  12
+                </span>
               </a>
-              <span class="heart-twelve">
-                12
-              </span>
             </li>
             <li class="nav-item-button">
-              <button class="nav-button button-small" type="button">Хочу сюда!</button>
+                <button class="nav-button button-small" type="button">Хочу сюда!</button>
             </li>
           </ul>
         </div>

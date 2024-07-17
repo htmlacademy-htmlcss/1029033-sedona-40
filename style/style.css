@@ -220,11 +220,17 @@ body {
   align-items: center;
 }
 
+.nav-item-heart,
+.nav-item-search {
+  width: 44px;
+  height: 64px;
+}
+
 .nav-link {
   text-decoration: none;
   color: var(--text-basic-color);
   display: block;
-  padding: 20px 0;
+  position: relative;
 }
 
 .nav-link-active {
@@ -237,8 +243,13 @@ body {
   position: relative;
 }
 
-.nav-item {
-  padding: 0 16px;
+.nav-link-search,
+.nav-link-heart {
+  padding: 22px 12px 22px 12px;
+}
+
+.nav-link-menu {
+padding: 20px 16px;
 }
 
 .nav-list-2 {
@@ -250,15 +261,6 @@ body {
   margin: 0;
 }
 
-.nav-item-search {
-  padding: 0 12px;
-}
-
-.nav-item-heart {
-  padding: 0 13px;
-  position: relative;
-}
-
 .nav-item-button {
   padding-left: 20px;
 }
@@ -268,7 +270,7 @@ body {
   color:var(--text-default-color);
   position: absolute;
   top: 11px;
-  left: 20px;
+  right: 4px;
   border-radius: 100%;
   font-weight: 400;
   font-size: 10px;
@@ -1254,6 +1256,7 @@ body {
 }
 
 .subscribe-subtitle-catalog {
+  width: 406px;
   margin: 96px 398px 20px 398px;
 }
 
@@ -1295,7 +1298,7 @@ body {
 
 .modal-window-subtitle {
   margin: 0;
-  padding: 64px 234px 64px 70px;
+  padding: 64px 233px 64px 70px;
 }
 
 .modal-window-button {
@@ -1367,6 +1370,7 @@ body {
 .arrival-date-input:hover,
 .date-of-departure-input:hover {
   background-color: rgba(230, 230, 230, 1);
+  border: 3px solid rgba(230, 230, 230, 1);
 }
 
 .arrival-date-input:active,
