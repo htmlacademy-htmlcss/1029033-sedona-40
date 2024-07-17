@@ -271,15 +271,14 @@
                 </button>
               </div>
               <label class="children-label heading-heading4" for="children-check">Дети:</label>
-              <button class="children-button">i
-                <div class="pop-up-window">
-                  <div class="rectangle">
-                    <p class="rectangle-text">
-                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-                    </p>
-                  </div>
+              <button class="children-button">i</button>
+              <div class="pop-up-window">
+                <div class="rectangle">
+                  <p class="rectangle-text">
+                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  </p>
                 </div>
-              </button>
+              </div>
               <div class="children">
                 <button class="button-minus" type="button" onclick="handleChangeCount('children-check', 'minus')">
                   <svg class="button-plus-minus-img" width="14" height="2" viewBox="0 0 14 2" fill="#756157" fill-opacity="0.3" xmlns="http://www.w3.org/2000/svg">
@@ -299,14 +298,14 @@
         </form>
       </div>
     </div>
+    <script>
+      const handleChangeCount = (inputId, action) => {
+        const input = document.getElementById(inputId);
+        const min = Number(input.min);
+        const diff = action === 'minus' ? -1 : 1;
+        const newValue = Number(input.value) + diff;
+        input.value = newValue < min ? min : newValue;
+      }
+    </script>
   </body>
-  <script>
-    const handleChangeCount = (inputId, action) => {
-      const input = document.getElementById(inputId);
-      const min = Number(input.min);
-      const diff = action === 'minus' ? -1 : 1;
-      const newValue = Number(input.value) + diff;
-      input.value = newValue < min ? min : newValue;
-    }
-  </script>
 </html>
