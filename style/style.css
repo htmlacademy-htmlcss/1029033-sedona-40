@@ -518,9 +518,9 @@ padding: 20px 16px;
   color: var(--text-default-color);
   padding: 8px 50px 8px 50px;
   border-radius: 4px;
-
   align-self: center;
   margin: 0;
+  margin-bottom: 96px;
   cursor: pointer;
   text-align: center;
 }
@@ -537,6 +537,7 @@ padding: 20px 16px;
 
 .subscribe {
   background-image: url('../images/index/subscribe.jpg');
+  background-color: #b2c2cc;
   background-size: cover;
   min-height: 415px;
   display: flex;
