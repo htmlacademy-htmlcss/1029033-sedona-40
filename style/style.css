@@ -760,6 +760,7 @@ body {
   grid-template-columns: 143px 143px;
   grid-template-rows: 48px 20px;
   row-gap: 36px;
+  column-gap: 2px;
 }
 
 .range-text-min {
@@ -851,7 +852,6 @@ body {
   border: 3px solid rgba(242, 242, 242, 1);
   background-color: rgba(242, 242, 242, 1);
   border-radius: 0 4px 4px 0;
-  margin-left: 2px;
   cursor: pointer;
   outline: 0;
   outline-offset: 0;
