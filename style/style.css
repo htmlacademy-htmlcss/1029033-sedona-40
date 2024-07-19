@@ -1033,7 +1033,7 @@ body {
   appearance: none;
   background: url("../images/catalog/arrow_select.svg");
   background-repeat: no-repeat;
-  background-position: top 20px right 19px;
+  background-position: top 19px right 18px;
   outline: 0;
   overflow: hidden;
   font-family: "PT Sans";
@@ -1072,7 +1072,7 @@ body {
 }
 
 .catalog {
-  padding: 0 70px 40px;
+  padding: 0 70px 39px;
 }
 
 .catalog-list {
@@ -1086,12 +1086,12 @@ body {
 
 .catalog-item {
   width: 340px;
-  border: 1px solid rgba(230, 230, 230, 1);
-  border-radius: 4px;
 }
 
 .catalog-item-card {
-  padding: 20px;
+  border: 1px solid rgba(230, 230, 230, 1);
+  border-radius: 4px;
+  padding: 19px;
   display: grid;
   grid-template-rows: min-content min-content auto;
   gap: 16px;
@@ -1202,7 +1202,7 @@ body {
 }
 
 .pagination-nav {
-  margin: 40px 70px 60px;
+  margin: 39px 70px 60px;
 }
 
 .pagination-list {
