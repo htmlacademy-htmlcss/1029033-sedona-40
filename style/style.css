@@ -909,8 +909,8 @@ body {
   position: absolute;
   top: 2px;
   left: 0;
-  width: 17px;
-  height: 17px;
+  width: 15px;
+  height: 15px;
   background-color: rgba(255, 255, 255, 1);
   border: 3px solid rgba(255, 255, 255, 1);
   border-radius: 4px;
@@ -936,8 +936,8 @@ body {
   position: absolute;
   top: 2px;
   left: 0;
-  width: 17px;
-  height: 17px;
+  width: 15px;
+  height: 15px;
   background-color: rgba(255, 255, 255, 1);
   border: 3px solid rgba(255, 255, 255, 1);
   border-radius: 50%;
