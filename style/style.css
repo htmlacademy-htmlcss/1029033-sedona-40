@@ -230,7 +230,7 @@ body {
 
 .nav-link-active {
   text-decoration: underline solid rgba(117, 98, 87, 1) 2px;
-  text-underline-offset: 21px;
+  text-underline-offset: 20px;
   text-underline-position: under;
   position: relative;
 }
@@ -812,12 +812,12 @@ body {
 }
 
 .toggle-max {
-  top: -9px;
-  left: 206px;
+  top: -8px;
+  left: 207px;
 }
 
 .toggle-min {
-  top: -9px;
+  top: -8px;
 }
 
 .range-toggle:active {
@@ -1033,7 +1033,7 @@ body {
   appearance: none;
   background: url("../images/catalog/arrow_select.svg");
   background-repeat: no-repeat;
-  background-position: top 21px right 20px;
+  background-position: top 20px right 19px;
   outline: 0;
   overflow: hidden;
   font-family: "PT Sans";
