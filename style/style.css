@@ -224,24 +224,28 @@ body {
 .nav-link {
   text-decoration: none;
   color: var(--text-basic-color);
-  display: block;
+  display: flex;
   position: relative;
 }
 
 .nav-link-active {
   text-decoration: underline solid rgba(117, 98, 87, 1) 2px;
-  text-underline-offset: 20px;
+  text-underline-offset: 21px;
   text-underline-position: under;
   position: relative;
 }
 
 .nav-link-search,
 .nav-link-heart {
-  padding: 21px 12px;
+  padding: 22px 12px;
 }
 
 .nav-link-menu {
   padding: 20px 16px;
+}
+
+.nav-link-menu:nth-child(3) {
+  width: 93px;
 }
 
 .nav-list-custom-menu {
