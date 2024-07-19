@@ -6,16 +6,14 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" href="images/favicon-32x32.png" sizes="32x32">
   </head>
-
   <body>
-
     <header class="page-header" data-test="header">
       <nav class="navigation">
         <div class="navigation-frame-menu">
           <a class="logo" href="index.html">
             <img src="images/index/logo.svg" width="140" height="70" alt="Логотип Седона">
           </a>
-          <ul class="nav-list-1">
+          <ul class="nav-list-frame-menu">
             <li class="nav-item">
               <a class="nav-link nav-link-menu nav-link-active heading-heading4 removing-overflow" href="index.html">
                 Главная
@@ -31,12 +29,10 @@
                 Гостиницы
               </a>
             </li>
-
-
           </ul>
         </div>
         <div class="navigation-custom-menu">
-          <ul class="nav-list-2">
+          <ul class="nav-list-custom-menu">
             <li class="nav-item-search">
               <a class="nav-link nav-link-search" href="#">
                 <img class="search" src="images/index/search.svg" width="20" height="20" alt="Поиск">
@@ -45,7 +41,6 @@
                 </span>
               </a>
             </li>
-
             <li class="nav-item-heart">
               <a class="nav-link nav-link-heart" href="#">
                 <img class="heart" src="images/index/heart.svg" width="20" height="20" alt="Избранное">
@@ -58,21 +53,17 @@
               </a>
             </li>
             <li class="nav-item-button">
-
                 <button class="nav-button button-small" type="button">Хочу сюда!</button>
-
             </li>
           </ul>
         </div>
       </nav>
     </header>
-
     <main class="main-index" data-test="main">
       <section class="welcome-to-sedona">
         <img class="image-welcome" src="images/index/welcome.svg" width="458" height="352" alt="Приветсвенная надпись Седона">
         <img src="images/index/welcome_divider.svg" width="1200" height="57" alt="Маска фона">
       </section>
-
       <section class="about-sedona" data-test="advantages">
         <div class="about-sedona-div">
           <h1 class="about-sedona-title heading-heading2 removing-overflow">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
@@ -122,12 +113,10 @@
           </li>
         </ul>
       </section>
-
       <article class="article">
         <h2 class="article-subtitle heading-heading2 removing-overflow">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p class="article-text text-basic removing-overflow">Опытный персонал и качественное обслуживание!</p>
       </article>
-
       <section class="advantages" data-test="service">
         <ul class="advantages-list">
           <li class="advantages-item background-second-1 advantages-block-home">
@@ -142,16 +131,13 @@
             <h3 class="advantages-subtitle heading-heading3 removing-overflow">Сувениры</h3>
             <p class="advantages-text text-blocks removing-overflow">Не только китайского, но и настоящего местного производства!</p>
           </li>
-
         </ul>
       </section>
-
       <article class="article-interested" data-test="search">
         <h2 class="article-interested-subtitle heading-heading2 removing-overflow">Заинтересовались?</h2>
         <p class="article-interested-text text-basic removing-overflow">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button tabindex="0" class="article-button button-big" for="modal-container" >Поиск гостиницы в Седоне</button>
       </article>
-
       <section class="subscribe" data-test="subscribe">
         <h3 class="subscribe-subtitle heading-heading2 removing-overflow">Подпишитесь на рассылку</h3>
         <p class="subscribe-text text-basic removing-overflow">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -162,9 +148,7 @@
           </button>
         </form>
       </section>
-
     </main>
-
     <footer class="index-footer" data-test="footer">
       <div class="footer-block">
         <ul class="footer-list">
@@ -198,8 +182,6 @@
         </a>
       </div>
     </footer>
-
-
     <!--модальное окно-->
     <input class="article-interested-button-radio visually-hidden" type="checkbox" name="nav-button" id="modal-container">
     <div class="modal-container" data-test="modal">
@@ -253,9 +235,7 @@
               </svg>
               <span class="date-of-departure-text text-small">На эти даты есть свободные номера. Пока есть.</span>
             </div>
-
             <div class="adults-children-elements">
-
               <label class="adults-label heading-heading4" for="adults-check">Взрослые:</label>
               <div class="adults">
                 <button class="button-minus" type="button" onclick="handleChangeCount('adults-check', 'minus')">

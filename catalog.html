@@ -7,34 +7,32 @@
     <link rel="icon" href="images/favicon-32x32.png" sizes="32x32">
   </head>
   <body>
-
-
     <header class="page-header" data-test="header">
       <nav class="navigation">
         <div class="navigation-frame-menu">
           <a class="logo" href="index.html">
             <img src="images/index/logo.svg" width="140" height="70" alt="Логотип Седона">
           </a>
-          <ul class="nav-list-1">
+          <ul class="nav-list-frame-menu">
             <li class="nav-item">
-              <a class="nav-link nav-link-menu  heading-heading4" href="index.html">
+              <a class="nav-link nav-link-menu heading-heading4 removing-overflow" href="index.html">
                 Главная
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-menu heading-heading4" href="#part1">
+              <a class="nav-link nav-link-menu heading-heading4 removing-overflow" href="#part1">
                 О Седоне
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-menu nav-link-active heading-heading4" href="catalog.html">
+              <a class="nav-link nav-link-menu nav-link-active heading-heading4 removing-overflow" href="catalog.html">
                 Гостиницы
               </a>
             </li>
           </ul>
         </div>
         <div class="navigation-custom-menu">
-          <ul class="nav-list-2">
+          <ul class="nav-list-custom-menu">
             <li class="nav-item-search">
               <a class="nav-link nav-link-search" href="#">
                 <img class="search" src="images/index/search.svg" width="20" height="20" alt="Поиск">
@@ -61,12 +59,9 @@
         </div>
       </nav>
     </header>
-
     <main class="main-index">
       <section class="header-filter" data-test="filter">
-
         <h1 class="header-filter-title heading-heading1">Гостиницы Седоны</h1>
-
         <ul class="header-filter-list">
           <li class="header-filter-item">
             <a class="header-filter-home" href="index.html">
@@ -160,14 +155,10 @@
           <fieldset class="filter-fieldset filter-fieldset-price">
               <legend class="filter-legend heading-heading4">Стоимость, ₽:</legend>
             <div class="filter-price">
-
               <span class="range-text-min">От</span>
               <input type="text" class="range-text range-start text-input" name="start" value="0">
-
               <span class="range-text-max">До</span>
               <input type="text" class="range-text range-end text-input" name="end" value="9000">
-
-
               <div class="range">
                 <div class="range-scale" >
                   <div class="range-bar" style="left: 0; width: 226px">
@@ -177,7 +168,6 @@
                     <button type="button" class="range-toggle toggle-max">
                       <span class="visually-hidden">Изменить максимальную цену</span>
                     </button>
-
                   </div>
                 </div>
               </div>
@@ -189,9 +179,7 @@
           </div>
         </form>
       </section>
-
       <section class="sorting" data-test="catalog">
-
         <div class="sorting-nav">
           <h2 class="sorting-subtitle heading-heading2 removing-overflow">Найдено гостиниц:
             <output name="result">38</output>
@@ -218,8 +206,6 @@
             </li>
           </ul>
         </div>
-
-
         <div class="catalog">
           <ul class="catalog-list">
             <li class="catalog-item">
@@ -332,8 +318,6 @@
           </ul>
         </div>
       </section>
-
-
       <hr class="catalog-hr">
       <section class="pagination-nav">
         <ol class="pagination-list">
@@ -357,18 +341,14 @@
           </li>
         </ol>
       </section>
-
       <section class="subscribe-catalog" data-test="subscribe">
-
           <h3 class="subscribe-subtitle-catalog heading-heading2 removing-overflow ">Подпишитесь на рассылку</h3>
           <p class="subscribe-text-catalog text-basic removing-overflow ">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="form-subscribe" action="https://echo.htmlacademy.ru/" method="get">
             <input class="input-subscribe input-subscribe-catalog" type="email" name="email" placeholder="Ваш e-mail" required>
             <button class="subscribe-button button-big" type="submit" >Подписаться</button>
           </form>
-
       </section>
-
     </main>
     <footer class="index-footer" data-test="footer">
       <div class="footer-block">
@@ -403,6 +383,5 @@
         </a>
       </div>
     </footer>
-
   </body>
 </html>
