@@ -235,9 +235,12 @@ body {
   position: relative;
 }
 
-.nav-link-search,
+.nav-link-search {
+  padding: 24px 12px 22px 13px;
+}
+
 .nav-link-heart {
-  padding: 22px 12px;
+  padding: 24px 13px 23px 13px;
 }
 
 .nav-link-menu {
