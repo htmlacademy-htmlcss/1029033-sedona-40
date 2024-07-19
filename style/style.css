@@ -219,14 +219,9 @@ body {
   align-items: center;
 }
 
-.nav-item-heart,
-.nav-item-search {
-  width: 44px;
-  height: 64px;
-}
+
 
 .nav-link {
-  min-height: 24px;
   text-decoration: none;
   color: var(--text-basic-color);
   display: block;
@@ -242,7 +237,7 @@ body {
 
 .nav-link-search,
 .nav-link-heart {
-  padding: 22px 12px;
+  padding: 21px 12px;
 }
 
 .nav-link-menu {
