@@ -668,6 +668,7 @@ body {
 .header-filter {
   background-image: url("../images/catalog/filter_background.jpg");
   background-size: cover;
+  min-height: 412px;
 }
 
 .header-filter-title {
@@ -711,10 +712,6 @@ body {
   padding: 0;
   display: flex;
   gap: 10px;
-}
-
-.header-filter {
-  min-height: 412px;
 }
 
 .filter {
@@ -1028,6 +1025,8 @@ body {
   background-position: top 21px right 20px;
   outline: 0;
   overflow: hidden;
+  font-family: "PT Sans";
+  cursor: pointer;
 }
 
 .sorting-select:hover,
@@ -1059,11 +1058,6 @@ body {
 
 .form-elements-color {
   border-color: var(--form-elements-color);
-}
-
-.sorting-select {
-  font-family: "PT Sans";
-  cursor: pointer;
 }
 
 .catalog {
@@ -1228,7 +1222,7 @@ body {
 }
 
 .pagination-page-number {
-  background-color: var(--basic-background-color);
+  background-color: var(--background-basic-color);
 }
 
 .page-number {
