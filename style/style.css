@@ -730,6 +730,7 @@ body {
 }
 
 .filter-list {
+  width: 150px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -883,6 +884,7 @@ body {
 }
 
 .filter-label {
+  width: 141px;
   color: var(--text-default-color);
   position: relative;
   display: block;
