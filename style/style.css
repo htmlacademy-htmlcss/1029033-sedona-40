@@ -184,7 +184,6 @@ body {
   height: 64px;
 }
 
-
 .navigation {
   height: 64px;
   display: flex;
@@ -1002,6 +1001,7 @@ body {
 .view-nav-list {
   list-style: none;
   margin: 0;
+  margin-left: 70px;
   padding: 0;
   display: flex;
   gap: 8px;
@@ -1010,12 +1010,14 @@ body {
 .sorting-subtitle {
   color: var(--text-basic-color);
   margin: 0;
+  width: 338px;
+  margin-right: 200px;
 }
 
 .sorting-select {
   width: 292px;
   height: 49px;
-  margin: 0 70px 0 auto;
+  margin: 0;
   border: 2px solid rgba(229, 229, 229, 1);
   border-radius: 4px;
   padding-left: 20px;
@@ -1040,7 +1042,7 @@ body {
 }
 
 .view-button {
-  padding: 17px 16px;
+  padding: 15px 14px;
   border: 2px solid var(--icon-basic-color);
   border-radius: 4px;
   display: flex;
@@ -1483,6 +1485,9 @@ body {
   background-color: rgba(242, 242, 242, 1);
   text-align: center;
   padding: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .button-minus {
