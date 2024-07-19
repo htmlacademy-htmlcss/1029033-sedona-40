@@ -681,6 +681,10 @@ body {
   cursor: pointer;
 }
 
+.header-filter-item {
+  height: 21px;
+}
+
 .header-filter-item:focus-visible .header-filter-text {
   color: rgba(255, 255, 255, 1);
 }
