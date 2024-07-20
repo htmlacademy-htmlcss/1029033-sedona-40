@@ -180,7 +180,6 @@ body {
 }
 /* ------ Header ------ */
 
-
 .navigation {
   min-height: 64px;
   display: flex;
@@ -197,6 +196,8 @@ body {
 .navigation-frame-menu {
   min-width: 507px;
   display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .navigation-custom-menu {
@@ -206,6 +207,8 @@ body {
   flex-grow: 1;
   justify-content: flex-end;
   margin-right: 70px;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .nav-list-frame-menu {
@@ -214,7 +217,15 @@ body {
   margin: 0;
   margin-left: 238px;
   display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
   align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .nav-link {
@@ -226,7 +237,7 @@ body {
 
 .nav-link-active {
   text-decoration: underline solid rgba(117, 98, 87, 1) 2px;
-  text-underline-offset: 20px;
+  text-underline-offset: 18px;
   text-underline-position: under;
   position: relative;
 }
@@ -254,6 +265,11 @@ body {
   align-items: center;
   padding: 0;
   margin: 0;
+}
+
+.nav-item-search, .nav-item-heart, .nav-item-button {
+  flex: 1 0 auto;
+  box-sizing: border-box;
 }
 
 .nav-item-button {
