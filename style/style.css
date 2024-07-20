@@ -401,6 +401,7 @@ body {
 
 .about-sedona-item-img {
   height: 385px;
+  background-color: var(--background-basic-3-color);
 }
 
 .image-about-sedona {
