@@ -1354,7 +1354,7 @@ body {
   width: 52px;
   height: 52px;
   color: rgba(242, 242, 242, 1);
-  border: none;
+  border: 3px solid rgba(242, 242, 242, 1);
   border-radius: 50%;
   padding: 0;
   cursor: pointer;
@@ -1377,7 +1377,7 @@ body {
 }
 
 .modal-window-button-close {
-  margin: 19px 18px 18px 19px;
+  margin: 17px 16px 16px 17px;
 }
 
 .arrangement-of-elements {
@@ -1529,6 +1529,7 @@ body {
 }
 
 .button-minus {
+  background-color: rgba(242, 242, 242, 1);
   width: 20px;
   height: 20px;
   border: none;
@@ -1567,6 +1568,7 @@ body {
 }
 
 .button-plus {
+  background-color: rgba(242, 242, 242, 1);
   width: 20px;
   height: 20px;
   border: none;
