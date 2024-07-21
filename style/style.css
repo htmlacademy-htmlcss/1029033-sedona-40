@@ -82,7 +82,7 @@
   line-height: 36px;
   text-transform: uppercase;
   border: none;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
 }
 
 .button-small {
@@ -91,7 +91,7 @@
   line-height: 20px;
   text-transform: uppercase;
   border: none;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
 }
 
 .button-regular {
@@ -242,6 +242,27 @@ body {
   position: relative;
 }
 
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: rgba(117, 97, 87, 1);
+}
+
+.nav-link:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.nav-link-search:hover,
+.nav-link-search:focus-visible,
+.nav-link-heart:hover,
+.nav-link-heart:focus-visible {
+  opacity: 0.7;
+}
+
+.nav-link-search:active,
+.nav-link-heart:active {
+  opacity: 0.3;
+}
+
 .nav-link-search {
   padding: 24px 12px 22px 13px;
 }
@@ -267,12 +288,14 @@ body {
   margin: 0;
 }
 
-.nav-item-search, .nav-item-heart, .nav-item-button {
+.nav-item-search, .nav-item-heart {
   flex: 1 0 auto;
   box-sizing: border-box;
 }
 
 .nav-item-button {
+  flex: 1 0 auto;
+  box-sizing: border-box;
   padding-left: 20px;
 }
 
@@ -607,7 +630,7 @@ body {
 .input-subscribe {
   border: 0;
   border-radius: 4px 0 0 4px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -704,15 +727,32 @@ body {
 .header-filter-text {
   color: var(--text-default-color);
   cursor: pointer;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 .header-filter-item {
-  height: 21px;
+  min-height: 21px;
+  display: flex;
+  align-items: center;
 }
 
 .header-filter-item:focus-visible .header-filter-text {
   color: rgba(255, 255, 255, 1);
+}
+
+.item-further {
+  width: 100px;
+}
+
+.item-further::before {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 10px;
+  background-image: url('../images/catalog/further.svg');
+  background-repeat: no-repeat;
+  margin-right: 10px;
 }
 
 .header-filter-home-img {
@@ -736,13 +776,13 @@ body {
 }
 
 .header-filter-list {
-  height: 21px;
+  min-height: 21px;
   list-style: none;
   margin: 0 0 40px 70px;
   padding: 0;
   display: flex;
   gap: 10px;
-  overflow: hidden;
+  flex-wrap: wrap;
 }
 
 .filter {
@@ -1065,7 +1105,7 @@ body {
   background-position: top 19px right 18px;
   outline: 0;
   overflow: hidden;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   cursor: pointer;
 }
 
@@ -1412,7 +1452,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   color: rgba(0, 0, 0, 1);
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   cursor: pointer;
 }
 
@@ -1483,7 +1523,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   color: rgba(0, 0, 0, 1);
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   cursor: pointer;
 }
 
