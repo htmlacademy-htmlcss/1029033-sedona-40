@@ -265,10 +265,20 @@ body {
 
 .nav-link-search {
   padding: 24px 12px 22px 13px;
+  width: 18px;
+  height: 18px;
+  background-image: url('../images/index/search.svg');
+  background-repeat: no-repeat;
+  background-position: left 13px top 23px;
 }
 
 .nav-link-heart {
   padding: 24px 13px 23px 13px;
+  width: 18px;
+  height: 17px;
+  background-image: url('../images/index/heart.svg');
+  background-repeat: no-repeat;
+  background-position: left 13px top 23px;
 }
 
 .nav-link-menu {
@@ -399,7 +409,6 @@ body {
 }
 
 .sedona-tile {
-  width: 400px;
   min-height: 385px;
   display: flex;
   justify-content: center;
@@ -414,7 +423,7 @@ body {
 }
 
 .about-sedona-item {
-  width: 230px;
+  width: 400px;
   margin:0;
   display: flex;
   flex-direction: column;
@@ -424,7 +433,10 @@ body {
 
 .about-sedona-item-img {
   height: 385px;
-  background-color: var(--background-basic-3-color);
+}
+
+.sedona-tile-img {
+  order: 2;
 }
 
 .image-about-sedona {
@@ -756,7 +768,10 @@ body {
 }
 
 .header-filter-home-img {
-  object-fit: contain;
+  width: 13px;
+  height: 15px;
+  background-image: url('../images/catalog/home_index.svg');
+  background-repeat: no-repeat;
 }
 
 .header-filter-home:hover {
@@ -1121,9 +1136,27 @@ body {
 
 .view-button {
   padding: 15px 14px;
+  width: 16px;
+  height: 14px;
   border: 2px solid var(--icon-basic-color);
   border-radius: 4px;
   display: flex;
+  background-position: left 50% top 50%;
+}
+
+.item-img-tile {
+  background-image: url('../images/catalog/tile.svg');
+  background-repeat: no-repeat;
+}
+
+.item-img-detail {
+  background-image: url('../images/catalog/detail.svg');
+  background-repeat: no-repeat;
+}
+
+.item-img-list {
+  background-image: url('../images/catalog/list.svg');
+  background-repeat: no-repeat;
 }
 
 .view-button:hover,
