@@ -265,10 +265,20 @@ body {
 
 .nav-link-search {
   padding: 24px 12px 22px 13px;
+  width: 18px;
+  height: 18px;
+  background-image: url('../images/index/search.svg');
+  background-repeat: no-repeat;
+  background-position: left 13px top 23px;
 }
 
 .nav-link-heart {
   padding: 24px 13px 23px 13px;
+  width: 18px;
+  height: 17px;
+  background-image: url('../images/index/heart.svg');
+  background-repeat: no-repeat;
+  background-position: left 13px top 23px;
 }
 
 .nav-link-menu {
